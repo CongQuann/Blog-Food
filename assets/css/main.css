@@ -329,13 +329,125 @@
     align-items: center;
     text-align: center;
 }
-
 .headersearch {
     flex: 1;
     height: 40px;
     background-color: var(--white-color);
     border-radius: 2px;
 }
+/* With Search */
+.withsearch {
+    height: var(--withsearch-height); 
+    display: flex;
+    align-items: center;
+ }
+ 
+ .headerlogo {
+     width: 220px;
+     display: flex;
+ }
+ 
+ .logoimg {
+     width: 70px;
+ }
+ 
+ .logoname {
+     font-size: 3rem;
+     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+     display: flex;
+     align-items: center;
+     text-align: center;
+ }
+ 
+ .headersearch {
+     width: 65%;
+     height: 40px;
+     background-color: var(--white-color);
+     border-radius: 2px;
+     margin-left: 50px;
+     display: flex;
+ }
+ 
+ .inputwrap {
+     flex: 1;
+     position: relative;
+ }
+ 
+ .searchinput {
+     width: 100%;
+     height: 100%;
+     border: none;
+     outline: none;
+     font-size: 1.5rem;
+     color: var(--text-color);
+     padding: 0 12px;
+     border-radius: 5px;
+ }
+ 
+ .searchbtn {
+     background-color: #89d4dd;
+     border: none;
+     height: 34px;
+     width: 60px;
+     border-radius: 3px;
+     margin: 2px;
+     outline: none;
+ }
+ 
+ .searchbtn:hover {
+     background-color: #a5d3da;
+ }
+ 
+ .searchicon {
+     font-size: 1.6rem;
+     color: var(--black-color);
+ }
+ 
+ .searchinput:focus ~ .searchhistory {
+     display: block;
+ }
+ 
+ /* Search history */
+ .searchhistory {
+     position: absolute;
+     top: calc(100% + 4px);
+     left: 0;
+     width: 100%;
+     background-color: var(--white-color);
+     border-radius: 3px;
+     box-shadow: 0 1px 5px #999;
+     display: none;
+     overflow: hidden;
+     z-index: 2;
+ }
+ 
+ .historyheading {
+     margin: 8px 12px;
+     font-size: 1.5rem;
+     color: #999;
+     font-weight: 300;
+ }
+ 
+ .historylist {
+     padding-left: 0;
+     list-style: none;
+ }
+ 
+ .historyitem {
+     height: 38px;
+     padding: 10px 12px;
+ }
+ 
+ .historyitem:hover {
+     background-color: #fafafa;
+ }
+ 
+ .historyitem a {
+     text-decoration: none;
+     font-size: 1.4rem;
+     color: var(--text-color);
+ }
+/*thanh tab*/
 div.danhmuc{
     margin:50px 0px 20px 10px;
 }
