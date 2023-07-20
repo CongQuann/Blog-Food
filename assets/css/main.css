@@ -449,7 +449,7 @@
  }
 /*thanh tab*/
 div.danhmuc{
-    margin:50px 0px 20px 10px;
+    margin:20px 0px 20px 10px;
 }
 div.danhmuc ul{
     display:flex;
@@ -467,6 +467,7 @@ div.danhmuc ul li a{
     background-color:rgb(255, 73, 73);
     border-radius:5px;
 }
+/*end thanh tab*/
 div.background-content{
     display:flex;
     width:100%;
@@ -671,7 +672,7 @@ div.description-content p{
     overflow:hidden;
 }
 div.description-content h3:hover{
-    color:var(--white-color);
+    color:rgb(238, 7, 7);
 }
 .XemThem:hover{
     color:rgb(237, 22, 22);
