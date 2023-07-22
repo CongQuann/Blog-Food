@@ -107,6 +107,6 @@ html{
     outline: none;
 }
 .img img:hover{
-    transform:scale(1.2,1.2);
+    transform:scale(1.05,1.05);
     transition-duration:0.8s;
 }

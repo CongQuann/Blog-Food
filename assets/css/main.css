@@ -613,7 +613,7 @@ div.content-right div.description-baiviet h3{
     margin-bottom:10px;
 }
 div.content-right div.description-baiviet h3:hover{
-    color:var(--white-color);
+    color:rgb(250, 20, 20);
 }
 div.content-right div.description-baiviet p{
     font-size:17px;
