@@ -109,4 +109,8 @@ html{
 .img img:hover{
     transform:scale(1.05,1.05);
     transition-duration:0.8s;
+    border-radius:39px;
+}
+.img img{
+    border-radius:10px;
 }
