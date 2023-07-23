@@ -16,7 +16,6 @@ window.onscroll= function(){
         body.style.width = "30%";
         body.style.marginTop = "0px";
         // body.style.backgroundColor = "var(--primary-color)";
-        body.style.zIndex = 9;
     }
     else{
         body.style.position ="absolute";
@@ -24,6 +23,5 @@ window.onscroll= function(){
         body.style.width = "30%";
         body.style.marginTop = "54%";
         // body.style.backgroundColor = "var(--primary-color)";
-        body.style.zIndex = 9;
     }
 }
