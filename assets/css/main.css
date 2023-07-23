@@ -1,7 +1,6 @@
 .header {
     height: var(--header-heigt);
-    /* background-image: linear-gradient(0, #aed2d7, rgb(79, 196, 196)); */
-    background-color:#B5EAEA;
+    background-image: linear-gradient(0, #aed2d7, rgb(79, 196, 196));
 }
 
 .navbar {
@@ -72,12 +71,12 @@
     right: 0;
     width: 404px;
     border: 1px solid #CCFFFF;
-    background-color: #CCFFFF;
+    background-color: whitesmoke;
     cursor: default; 
     transform-origin: top right; /*chỉ định nơi bắt đầu animation*/
     animation: notifygrowth ease .2s;
     display: none;
-    z-index:90;
+    z-index: 3;
 }
 
 /*tạo một lớp giả làm cầu nối hover giữa tb và bảng tb*/
@@ -85,7 +84,7 @@
     content: "";
     border-width: 20px 50px;
     border-style: solid;
-    border-color: transparent transparent #CCFFFF transparent;
+    border-color: transparent transparent whitesmoke transparent;
     position: absolute;
     right: 0px;
     top: -30px;
@@ -108,7 +107,7 @@
 
 .notihead {
     height: 40px;
-    background-color: #CCFFFF;
+    background-color: whitesmoke;
 }
 
 .notihead h3 {
@@ -132,7 +131,7 @@
 }
 
 .notiviewed {
-    background-color: #CCFFFF;
+    background-color: rgb(221, 221, 221);
 }
 
 .notilink {
@@ -440,7 +439,7 @@
  }
  
  .historyitem:hover {
-    background-color: #fafafa;
+     background-color: #fafafa;
  }
  
  .historyitem a {
@@ -450,7 +449,7 @@
  }
 /*thanh tab*/
 div.danhmuc{
-    padding:20px 0px 14px 10px;
+    margin:20px 0px 20px 10px;
 }
 div.danhmuc ul{
     display:flex;
@@ -470,11 +469,9 @@ div.danhmuc ul li a{
 }
 /*end thanh tab*/
 div.background-content{
-    padding-top:20px;
     display:flex;
     width:100%;
-    height:600px;
-    background-image: linear-gradient(0, #aed2d7, rgb(79, 196, 196));
+    height:625px;
 }
 .content-left{
     width:65%;
@@ -502,13 +499,13 @@ div.background-content{
 .slide img{
     width:100%;
     height:100%;
-    z-index:1;
+    z-index: 1;
 }
 div.info{
     position:absolute;
     font-size:15px;
     top:0;
-    margin-top:400px;
+    margin-top:350px;
     width:100%;
     display:flex;
     justify-content:center;
@@ -626,11 +623,6 @@ div.content-right div.description-baiviet p{
     -webkit-box-orient: vertical; /*điều hướng dọc*/
     overflow: hidden;
 }
-.background-random{
-    padding-top:30px;
-    background-color:#FFBCBC;
-    height:830px;
-}
 .random-content{
     width:65%;
 }
@@ -680,15 +672,14 @@ div.description-content p{
     overflow:hidden;
 }
 div.description-content h3:hover{
-    color: var(--hover-color);
+    color:var(--hover-color);
 }
 .XemThem:hover{
-    color: var(--hover-color);
+    color:var(--hover-color);
 }   
 /* Footer */
 .footer {
-    /* background-image: linear-gradient(0, rgb(79, 196, 196),#aed2d7); */
-    background-color:#F38BA0;
+    background-image: linear-gradient(0, rgb(79, 196, 196),#aed2d7);
 }
 
 .gridrow {

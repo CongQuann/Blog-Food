@@ -22,6 +22,7 @@ html{
     font-size:62.5%;
     line-height: 1.6rem;
     font-family:Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
 }
 /* canh theo tỉ lệ màn hình */
 .grid{
@@ -108,10 +109,6 @@ html{
     outline: none;
 }
 .img img:hover{
-    transform:scale(1.05,1.05);
+    transform:scale(1.2,1.2);
     transition-duration:0.8s;
-    border-radius:35px;
-}
-.img img{
-    border-radius:10px;
 }
