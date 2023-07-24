@@ -514,7 +514,7 @@ div.info{
     justify-content:center;
 }
 div.info h2{
-    width:40%;
+    width:auto;
     text-align:center;
     color:var(--white-color);
     padding: 15px 30px;
