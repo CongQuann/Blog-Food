@@ -72,7 +72,7 @@
     top: 118%;
     right: 0;
     width: 404px;
-    border: 1px solid #CCFFFF;
+    border: 1px solid #d6d5d5;
     background-color:#fafafa;
     /* background-color: #CCFFFF; */
     cursor: default; 
@@ -87,7 +87,7 @@
     content: "";
     border-width: 20px 50px;
     border-style: solid;
-    border-color: transparent transparent #dad9d9 transparent;
+    border-color: transparent transparent #e1e1e1 transparent;
     position: absolute;
     right: 0px;
     top: -30px;
@@ -137,7 +137,7 @@
 
 .notiviewed {
     /* background-color: #CCFFFF; */
-    background-color:#fafafa;
+    background-color:#c4c4c4;
 }
 
 .notilink {
@@ -401,7 +401,7 @@
  }
  
  .searchbtn:hover {
-     background-color: #a5d3da;
+     background-color: #d6d5d5;
  }
  
  .searchicon {
@@ -456,9 +456,6 @@
 /*thanh tab*/
 div.danhmuc{
     padding:20px 0px 14px 10px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
 }
 div.danhmuc ul{
     display:flex;
@@ -483,13 +480,77 @@ div.danhmuc ul li a:hover{
 /*end thanh tab*/
 
 /*start container*/
-
-div.links a{
-    border: 4px solid white;
-    border-left-color:#fda47c;
-    margin: 2px 3px 3px 10px;
+.cover-container{
+    width:100%;
+    display:flex;
+    justify-content:center;
 }
-div.links a:first-child{
-    border-left-color:white;
+.container{
+    width:60%;
+}
+.page-title{
+    text-align:center;
+    line-height:3rem;
+    padding-bottom:5rem;
+}
+.page-title h1{
+    font-size:56px;
+    letter-spacing:-3px;
+    line-height:5rem;
+}
+.page-title .types a{
+    margin-right:0.5rem;
+    padding: 0rem 0.5rem 0rem 0.5rem;
+    text-decoration:none;
+    color:white;
+    font-size:14px;
+    background-color:black;
+}
+.page-title .description-title{
+    font-size:1.8rem;
+}
+.date-upload{
+    font-weight:bolder;
+    font-size: 1.3rem;
+}
+.content img{
+    width:100%;
+    height:500px;
+    margin-bottom:3.8rem;
+}
+.content p{
+    font-size:17px;
+    line-height:30px;
+}
+.content h2{
+    font-size:30px;
+    margin: 1.5rem 0 1.5rem 0;
+}
+.content h3{
+    font-size:17px;
+}
+.fa-solid{
+    font-size:14px;
+}
+.opinion{
+    display:flex;
+    
+}
+.opinion p::before{
+    font-family:'FontAwesome';
+    content: '\f10d';
+    font-size:20px;
+    color:#ffac64;
+    margin-right:5px;
+}
+.opinion p::after{
+    font-family:'FontAwesome';
+    content: '\f10e';
+    font-size:20px;
+    color:#ffac64;
+    margin-left:5px;
+}
+.opinion p{
+    color:#e56e06;
 }
 /*end container*/
