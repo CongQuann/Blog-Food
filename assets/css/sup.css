@@ -72,7 +72,7 @@
     top: 118%;
     right: 0;
     width: 404px;
-    border: 1px solid #CCFFFF;
+    border: 1px solid #d6d5d5;
     background-color:#fafafa;
     /* background-color: #CCFFFF; */
     cursor: default; 
@@ -137,7 +137,7 @@
 
 .notiviewed {
     /* background-color: #CCFFFF; */
-    background-color:#d5d5d5;
+    background-color:#c4c4c4;
 }
 
 .notilink {
