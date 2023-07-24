@@ -1,7 +1,7 @@
 .header {
     height: var(--header-heigt);
     /* background-image: linear-gradient(0, #aed2d7, rgb(79, 196, 196)); */
-    background-color:#B5EAEA;
+    background-color: #B5EAEA;
 }
 
 .navbar {
@@ -71,8 +71,8 @@
     top: 118%;
     right: 0;
     width: 404px;
-    border: 1px solid #CCFFFF;
-    background-color: #CCFFFF;
+    border: 1px solid whitesmoke;
+    background-color: whitesmoke;
     cursor: default; 
     transform-origin: top right; /*chỉ định nơi bắt đầu animation*/
     animation: notifygrowth ease .2s;
@@ -85,7 +85,7 @@
     content: "";
     border-width: 20px 50px;
     border-style: solid;
-    border-color: transparent transparent #CCFFFF transparent;
+    border-color: transparent transparent whitesmoke transparent;
     position: absolute;
     right: 0px;
     top: -30px;
@@ -108,7 +108,7 @@
 
 .notihead {
     height: 40px;
-    background-color: #CCFFFF;
+    background-color: whitesmoke;
 }
 
 .notihead h3 {
@@ -128,11 +128,11 @@
 }
 
 .notiitem:hover {
-    background-color: rgb(221, 221, 221);
+    background-color: rgb(220, 219, 219);
 }
 
 .notiviewed {
-    background-color: #CCFFFF;
+    background-color: rgb(221, 221, 221);
 }
 
 .notilink {
@@ -448,26 +448,40 @@
      font-size: 1.4rem;
      color: var(--text-color);
  }
-/*thanh tab*/
+/*Thanh Tab*/
 div.danhmuc{
-    padding:20px 0px 14px 10px;
+    padding-top: 10px;
+    background-color: #B5EAEA;
 }
+
 div.danhmuc ul{
     display:flex;
     list-style-type: none;
     align-items:center;
 }
+
 div.danhmuc ul li{
-    padding-right:8px;
+    margin-right:5px;
 }
+
 div.danhmuc ul li a{
     text-decoration:none;
-    font-size:16px;
-    color:var(--black-color);
-    padding:7px 10px;
-    background-image: linear-gradient(0, #aed2d7, rgb(79, 196, 196));
-    border-radius:5px;
+    font-size: 1.4rem;
+    color: var(--black-color);
+    background-color: rgb(79, 196, 196);
+    padding: 8px 8px 0px 8px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
+
+div.danhmuc .drink {
+    background-color: rgb(0, 121, 242);
+}
+
+div.danhmuc .event {
+    background-color: rgb(0, 121, 242);
+}
+
 /*end thanh tab*/
 div.background-content{
     padding-top:20px;
