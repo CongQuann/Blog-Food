@@ -1,7 +1,10 @@
 .header {
-    height: var(--header-height);
+    height: var(--header-heigt);
     /* background-image: linear-gradient(0, #aed2d7, rgb(79, 196, 196)); */
-    background-color: #B5EAEA;
+    background-color:#fafafa;
+    border-bottom:3px solid black;
+    margin: 0 7px;
+    padding-bottom:2px;
 }
 
 .navbar {
@@ -50,7 +53,8 @@
 .navitem:hover,
 .navlink:hover {
     cursor: pointer; /*trỏ chuột thay bằng bàn tay*/
-    color: var(--hover-color);
+    /* color: rgba(255, 255, 255, 0.7); */
+    color:#959494;
 }
 
 .navicon {
@@ -72,7 +76,8 @@
     right: 0;
     width: 404px;
     border: 1px solid whitesmoke;
-    background-color: whitesmoke;
+    background-color:whitesmoke;
+    /* background-color: #CCFFFF; */
     cursor: default; 
     transform-origin: top right; /*chỉ định nơi bắt đầu animation*/
     animation: notifygrowth ease .2s;
@@ -108,7 +113,8 @@
 
 .notihead {
     height: 40px;
-    background-color: whitesmoke;
+    /* background-color: #CCFFFF; */
+    background-color:#fafafa;
 }
 
 .notihead h3 {
@@ -128,11 +134,13 @@
 }
 
 .notiitem:hover {
-    background-color: rgb(220, 219, 219);
+    /* background-color: rgba(255, 255, 255, 0.35); */
+    background-color:#d6d5d5;
 }
 
 .notiviewed {
-    background-color: rgb(221, 221, 221);
+    /* background-color: #CCFFFF; */
+    background-color:rgb(212, 212, 212);
 }
 
 .notilink {
@@ -285,7 +293,7 @@
 }
 
 .btn:hover {
-    background-color: var(--hover-color);
+    background-color: rgba(0, 0, 0, 0.25);
 }
 
 .mainhelp {
@@ -382,21 +390,22 @@
      font-size: 1.5rem;
      color: var(--text-color);
      padding: 0 12px;
-     border-radius: 5px;
+     border-radius: 4px;
+     background-color:#eaeaea;
  }
  
  .searchbtn {
-     background-color: #89d4dd;
+     /*background-color: #89d4dd; */
      border: none;
-     height: 34px;
+     height: 40px;
      width: 60px;
      border-radius: 3px;
-     margin: 2px;
+     margin: 0 2px 0 2px;
      outline: none;
  }
  
  .searchbtn:hover {
-     background-color: #a5d3da;
+     background-color: #d6d5d5;
  }
  
  .searchicon {
@@ -440,7 +449,7 @@
  }
  
  .historyitem:hover {
-    background-color: #fafafa;
+    background-color:#d6d5d5;
  }
  
  .historyitem a {
@@ -448,47 +457,52 @@
      font-size: 1.4rem;
      color: var(--text-color);
  }
-/*Thanh Tab*/
+/*thanh tab*/
 div.danhmuc{
-    padding-top: 10px;
-    background-color: #B5EAEA;
+    padding:20px 0px 10px 10px;
+    margin: 0 15px 0 10px;
 }
-
 div.danhmuc ul{
     display:flex;
     list-style-type: none;
     align-items:center;
 }
-
 div.danhmuc ul li{
-    margin-right:5px;
+    padding-right:15px;
 }
-
 div.danhmuc ul li a{
     text-decoration:none;
-    font-size: 1.4rem;
-    color: var(--black-color);
-    background-color: rgb(79, 196, 196);
-    padding: 8px 8px 0px 8px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    font-size:16px;
+    color:var(--black-color);
+    padding:10px 0 10px 0px;
+    margin-left:5px;
+    border-bottom: 1px solid rgb(196, 196, 196);
+    position:relative;
 }
-
-div.danhmuc .drink {
-    background-color: rgb(0, 121, 242);
+div.danhmuc ul li a::after{
+    content: "";
+    height:3px;
+    width:0;
+    background: #ec7f71;
+    position:absolute;
+    bottom:0px;
+    left:0;
+    /* transition: all 0.5s ease-in-out; */
 }
-
-div.danhmuc .event {
-    background-color: rgb(0, 121, 242);
+div.danhmuc ul li a:hover{
+    color: #ec7f71;
+    transition: 1s;
 }
-
+div.danhmuc ul li a:hover::after{
+    transition: all 0.5s ease-in-out;
+    width:100%;
+}
 /*end thanh tab*/
 div.background-content{
     padding-top:20px;
     display:flex;
     width:100%;
     height:600px;
-    background-image: linear-gradient(0, #aed2d7, rgb(79, 196, 196));
 }
 .content-left{
     width:65%;
@@ -600,10 +614,18 @@ div.content-right{
 .child-right{
     height:500px;
     overflow:auto;
+    width:100%;
 }
 div.content-right div.baiviet{
-    width:100%;
+    width:99%;
     padding:10px;
+    margin-left:auto;
+    margin-right:auto;
+}
+div.content-right div.baiviet:hover{
+    background-color:rgba(0, 0, 0, 0.116);
+    border-radius:10px;
+    box-shadow: 0 0 10px 0 rgb(61, 61, 61);
 }
 div.content-right div.baiviet a{
     display:flex;
@@ -642,7 +664,6 @@ div.content-right div.description-baiviet p{
 }
 .background-random{
     padding-top:30px;
-    background-color:#FFBCBC;
     height:830px;
 }
 .random-content{
@@ -653,7 +674,17 @@ div.content-right div.description-baiviet p{
 }
 .random-content .content{
     display:flex;
-    margin-bottom:10px;
+    margin-bottom:5px;
+    padding: 5px 5px 5px 5px;
+    width:99%;
+}
+.random-content .content:hover{
+    background-color:rgba(0, 0, 0, 0.116);
+    border-radius:10px;
+    box-shadow: 0 0 10px 0 rgb(61, 61, 61);
+}
+.random-content .content:hover h3{
+    color:var(--text-color);
 }
 .random-content .content .img{
     width:30%;
@@ -675,7 +706,7 @@ div.content-right div.description-baiviet p{
 }
 .description-content a{
     font-size:18px;
-    margin-bottom:15px;
+    margin-bottom:10px;
     text-decoration:none;
     color: var(--text-color);
 }
@@ -702,7 +733,7 @@ div.description-content h3:hover{
 /* Footer */
 .footer {
     /* background-image: linear-gradient(0, rgb(79, 196, 196),#aed2d7); */
-    background-color:#F38BA0;
+    background-color:#fafafa;
 }
 
 .gridrow {
