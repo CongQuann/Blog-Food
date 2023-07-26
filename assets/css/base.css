@@ -4,7 +4,7 @@
     --text-color:#333;
     --border-color: rgb(169, 165, 165);
     --primary-color: #aed2d7;
-    --hover-color: rgb(49, 120, 170);
+    --hover-color: #ec7f71;
 
     --header-height: 120px;
     --navbar-height: 47px;
@@ -40,6 +40,9 @@ html{
 .title{
     font-size:17px;
     margin-bottom:10px;
+}
+.title h2{
+    padding-bottom:5px;
 }
 /*Animation*/
 @keyframes fadein {

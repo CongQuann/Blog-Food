@@ -2,6 +2,9 @@
     height: var(--header-heigt);
     /* background-image: linear-gradient(0, #aed2d7, rgb(79, 196, 196)); */
     background-color:#fafafa;
+    border-bottom:3px solid black;
+    margin: 0 7px;
+    padding-bottom:2px;
 }
 
 .navbar {
@@ -72,8 +75,8 @@
     top: 118%;
     right: 0;
     width: 404px;
-    border: 1px solid #d6d5d5;
-    background-color:#fafafa;
+    border: 1px solid whitesmoke;
+    background-color:whitesmoke;
     /* background-color: #CCFFFF; */
     cursor: default; 
     transform-origin: top right; /*chỉ định nơi bắt đầu animation*/
@@ -87,7 +90,7 @@
     content: "";
     border-width: 20px 50px;
     border-style: solid;
-    border-color: transparent transparent #e1e1e1 transparent;
+    border-color: transparent transparent whitesmoke transparent;
     position: absolute;
     right: 0px;
     top: -30px;
@@ -137,7 +140,7 @@
 
 .notiviewed {
     /* background-color: #CCFFFF; */
-    background-color:#c4c4c4;
+    background-color:rgb(212, 212, 212);
 }
 
 .notilink {
@@ -387,16 +390,17 @@
      font-size: 1.5rem;
      color: var(--text-color);
      padding: 0 12px;
-     border-radius: 5px;
+     border-radius: 4px;
+     background-color:#eaeaea;
  }
  
  .searchbtn {
      /*background-color: #89d4dd; */
      border: none;
-     height: 34px;
+     height: 40px;
      width: 60px;
      border-radius: 3px;
-     margin: 2px;
+     margin: 0 2px 0 2px;
      outline: none;
  }
  
@@ -455,7 +459,8 @@
  }
 /*thanh tab*/
 div.danhmuc{
-    padding:20px 0px 14px 10px;
+    padding:20px 0px 10px 10px;
+    margin: 0 15px 0 10px;
 }
 div.danhmuc ul{
     display:flex;
@@ -469,13 +474,28 @@ div.danhmuc ul li a{
     text-decoration:none;
     font-size:16px;
     color:var(--black-color);
-    padding:10px 10px;
-    /* background-image: linear-gradient(0, #aed2d7, rgb(79, 196, 196)); */
-    /* background-color:#d6d5d5; */
-    border-radius:5px;
+    padding:10px 0 10px 0px;
+    margin-left:5px;
+    border-bottom: 1px solid rgb(196, 196, 196);
+    position:relative;
+}
+div.danhmuc ul li a::after{
+    content: "";
+    height:3px;
+    width:0;
+    background: #ec7f71;
+    position:absolute;
+    bottom:0px;
+    left:0;
+    /* transition: all 0.5s ease-in-out; */
 }
 div.danhmuc ul li a:hover{
-    background-color:#d6d5d5;
+    color: #ec7f71;
+    transition: 1s;
+}
+div.danhmuc ul li a:hover::after{
+    transition: all 0.5s ease-in-out;
+    width:100%;
 }
 /*end thanh tab*/
 
