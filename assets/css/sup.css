@@ -494,7 +494,7 @@ div.danhmuc ul li a:hover{
     padding-bottom:5rem;
 }
 .page-title h1{
-    font-size:56px;
+    font-size: 6rem;
     letter-spacing:-3px;
     line-height:5rem;
 }
@@ -503,8 +503,9 @@ div.danhmuc ul li a:hover{
     padding: 0rem 0.5rem 0rem 0.5rem;
     text-decoration:none;
     color:white;
-    font-size:14px;
+    font-size:1.4rem;
     background-color:black;
+    border-radius: 3px;
 }
 .page-title .description-title{
     font-size:1.8rem;
@@ -534,7 +535,6 @@ div.danhmuc ul li a:hover{
 }
 .opinion{
     display:flex;
-    
 }
 .opinion p::before{
     font-family:'FontAwesome';
@@ -554,3 +554,131 @@ div.danhmuc ul li a:hover{
     color:#e56e06;
 }
 /*end container*/
+
+/* read more */
+.readmore {
+    position: relative;
+    font-size: 1.7rem;
+    margin-top: 20px;
+}
+
+.readmore::before {
+    content: "";
+    border-width: 5px 7px;
+    border-style: solid;
+    border-color: transparent transparent transparent black;
+    position: absolute;
+    left: 90px;
+    top: 5px;
+}
+
+.readmore {
+    display: flex;
+}
+
+.readmore .tags {
+    margin-left: 30px;
+    margin-bottom: 3px;
+}
+
+.readmore .tags a {
+    margin-right: 0.5rem;
+    padding: 0rem 0.5rem 0rem 0.5rem;
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+    background-color: black;
+    border-radius: 3px;
+}
+
+.commentform {
+    display: flex;
+    height: 50px;
+}
+
+.commentform #cmt {
+    width: 100%;
+    font-size: 1.6rem;
+    margin-left: 5px;
+}
+
+.avt {
+    width: 50px;
+    height: 50px;
+    margin-right: 3px;
+}
+
+.send {
+    display: flex;
+    justify-content: right;
+    margin-top: 5px;
+}
+
+.sendbtn {
+    width: 40px;
+    height: 20px;
+    margin-bottom: 10px;
+}
+
+.comments {
+    display: flex;
+    margin-bottom: 7px;
+}
+
+.comments p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7rem;
+    margin-left: 5px;
+}
+
+/* Footer */
+.footer {
+    /* background-image: linear-gradient(0, rgb(79, 196, 196),#aed2d7); */
+    background-color:#fafafa;
+}
+
+.gridrow {
+    display: flex;
+}
+
+.gridcol {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%;
+}
+
+.gridcol h3 {
+    font-size: 1.5rem;
+    margin-top: 32px;
+}
+
+.footerlist {
+    list-style: none;
+}
+.footeritem:first-child {
+    margin-top: 15px;
+}
+
+.footeritem {
+    margin: 10px 0;
+}
+
+.footeritem i {
+    margin-right: 3px;
+}
+
+.itemlink {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+
+.itemlink:hover {
+    color: var(--hover-color);
+}
+
+.itemcontact {
+    font-size: 1.2rem;
+}
