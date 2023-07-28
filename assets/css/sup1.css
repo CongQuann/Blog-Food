@@ -533,26 +533,24 @@ div.danhmuc ul li a:hover{
 .fa-solid{
     font-size:14px;
 }
-.opinion{
-    display:flex;
+
+.content .desimg {
+    display: flex;
+    justify-content: center;
+    margin: 8px 0
 }
-.opinion p::before{
-    font-family:'FontAwesome';
-    content: '\f10d';
-    font-size:20px;
-    color:#ffac64;
-    margin-right:5px;
+
+.contentlist {
+    font-size:17px;
+    line-height:30px;
+    margin-left: 20px;
+    margin-bottom: 10px;
 }
-.opinion p::after{
-    font-family:'FontAwesome';
-    content: '\f10e';
-    font-size:20px;
-    color:#ffac64;
-    margin-left:5px;
+
+.steps {
+    margin: 10px 0;
 }
-.opinion p{
-    color:#e56e06;
-}
+
 
 /*end container*/
 
