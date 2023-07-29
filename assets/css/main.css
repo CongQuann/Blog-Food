@@ -762,6 +762,70 @@ div.art a p.country{
     font-size: 14px;
     line-height:20px;
 }
+.background-chude{
+    background-color:rgba(255,245,230,1);
+}
+.posts{
+    padding-top:20px;
+    margin:1% 5% 0 5%;
+}
+.frame-posts{
+    display:flex;
+    flex-wrap:wrap;
+    width:100%;
+}
+.post{
+    width:23.3%;
+    height:400px;
+    background-color:rgb(255, 255, 255);
+    display:flex;
+    justify-content:center;
+    margin-right:20px;
+    margin-bottom:20px;
+}
+.post:last-child{
+    margin-right:0;
+}
+.post a{
+    width:80%;
+    padding:22px 0 18px 0;
+    text-decoration:none;
+    color:var(--text-color);
+}
+.img-post img
+{
+    width:100%;
+    height:200px;
+}
+.title-post{
+    background-color:#000;
+    color:var(--white-color);
+    width:auto;
+}
+.content-post h4{
+    font-size:22px;
+    margin:5px 0 5px 0;
+}
+.rating{
+    display:flex;
+    margin-bottom:5px;
+}
+.rating span{
+    font-size:14px;
+    font-weight:bolder;
+}
+.star{
+    margin-left:10px;
+    font-size:16px;
+}
+.content-post p{
+    font-size:13px;
+}
+.thank{
+    text-align:center;
+    font-size:30px;
+    padding-bottom:10px;
+}
 /* Footer */
 .footer {
     background-color:#fafafa;
