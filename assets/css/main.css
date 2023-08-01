@@ -801,6 +801,7 @@ div.art a p.country{
     background-color:#000;
     color:var(--white-color);
     width:auto;
+    padding: 2px;
 }
 .content-post h4{
     font-size:22px;
