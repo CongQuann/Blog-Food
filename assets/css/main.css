@@ -756,6 +756,7 @@ div.art a::before{
     position: absolute;
     top: 2px;
     left: 0;
+    margin-right:4px;
     font-size: 60px;
     font-family: serif;
     color: #cbcbcb;
