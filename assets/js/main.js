@@ -65,7 +65,7 @@ var gototop = document.getElementById("Gototop");
             {
              items[i].style.borderBottom = "none";
             }
-         },5000)
+         },4000)
     }
  }
 
