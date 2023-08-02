@@ -523,7 +523,7 @@ div.background-content{
 .slider{
     width:100%;
     height:500px;
-    border-radius:10px;
+    border-radius:3px;
     position:relative;
     overflow:hidden;
 }
@@ -573,7 +573,7 @@ div.info h2{
     border: 2px solid #40D3DC;
     padding:5px;
     margin-right:10px;
-    border-radius:10px;
+    border-radius:5px;
     cursor: pointer;
     transition: 1s;
 }
@@ -603,7 +603,7 @@ div.info h2{
 .navigation-auto div{
     border: 2px solid #40D3DC;
     padding:5px;
-    border-radius: 10px;
+    border-radius: 5px;
     margin-right:10px;
     transition: 1s;
 }
@@ -636,7 +636,7 @@ div.content-right div.baiviet{
 }
 div.content-right div.baiviet:hover{
     background-color:rgba(0, 0, 0, 0.116);
-    border-radius:10px;
+    border-radius:5px;
     box-shadow: 0 0 10px 0 rgb(61, 61, 61);
 }
 div.content-right div.baiviet a{
@@ -690,7 +690,7 @@ div.content-right div.description-baiviet p{
 }
 .random-content .content:hover{
     background-color:rgba(0, 0, 0, 0.116);
-    border-radius:10px;
+    border-radius:2px;
     box-shadow: 0 0 10px 0 rgb(61, 61, 61);
 }
 .random-content .content:hover h3{
@@ -820,6 +820,7 @@ div.art a p.country{
     background-color:#000;
     color:var(--white-color);
     width:auto;
+    padding: 2px;
 }
 .content-post h4{
     font-size:22px;
