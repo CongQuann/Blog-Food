@@ -1,0 +1,125 @@
+.header{
+    height:160px;
+}
+.navnotify {
+    left: 0;
+    width: 200px;
+}
+.navnotify::before {
+    content: "";
+    border-width: 5px 3px;
+    position: absolute;
+    left: 0px;
+    top:-10px;
+}
+.withsearch{
+    flex-direction: column;
+}
+.headersearch {
+    width: 100%;
+    margin-left: 0;
+}
+div.background-content{
+    flex-wrap:wrap;
+    width:100%;
+    height:max-content;
+}
+.content-left{
+    width:100%;
+    margin: 0 10px;
+    height:60%;
+}
+/*design fold phone*/
+@media screen and (max-width:360px){
+    div.info{
+        bottom:30px;
+        font-size:10px;
+    }
+    .navigation-manual{
+        bottom:10px;
+        width:100%;
+    }
+    .manual-bnt{
+        padding:auto;
+        border-radius: auto;
+    }
+    .navigation-auto{
+        width:100%;
+        bottom:10px;
+    }
+    .navigation-auto div{
+        padding:auto;
+        border-radius: auto;
+    }
+    .posts .title{
+        text-align:center;
+        margin-left:0;
+    }   
+}
+/*end deign Flod phone*/
+.slider{
+    width:100%;
+    height:60%;
+    border-radius:3px;
+    position:relative;
+    overflow:hidden;
+}
+div.info h2{
+    width:auto;
+    text-align:center;
+    color:var(--white-color);
+    padding: 10px 10px;
+    background-color:rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 10px 0px rgb(80, 80, 80); /*left right blur scale color*/
+}
+div.content-right{
+    width:100%;
+    margin: 10px 10px 0 0;
+}
+div.content-right .title{
+    margin-left:10px;
+}
+div.content-right div.baiviet .img{
+    width:50%;
+    height:auto;
+    display:flex;
+    margin-right:10px;
+}
+.background-random{
+    padding-top:30px;
+    height:max-content;
+    display:flex;
+    flex-wrap:wrap;
+}
+.background-random .title{
+    margin-left:10px;
+    margin-right:10px;
+}
+.random-content{
+    width:100%;
+}
+div.art{
+    width:60%;
+    margin:10px 50px 0 10px;
+}
+.random-content .content .img{
+    width:50%;
+    height:25%;
+}
+.description-content{
+    width:50%;
+    margin-left:10px;
+}
+.description-content h3 {
+    font-size:17px;
+}
+div.description-content > p{
+    display: none
+}
+@media screen and (max-width:556px){
+.post{
+    width:100%;
+    margin-right:50px;
+    margin-left:50px;
+}
+}

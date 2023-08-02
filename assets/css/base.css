@@ -113,14 +113,7 @@ html{
 .img img:hover{
     transform:scale(1.05,1.05);
     transition-duration:0.8s;
-<<<<<<< HEAD
-}
-.img img{
-    border-radius:7px;
-=======
-    border-radius:5px;
 }
 .img img{
     border-radius:5px;
->>>>>>> 828440d2661543414dfe5d754de5e232f34ef3f1
 }

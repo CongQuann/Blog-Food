@@ -339,11 +339,11 @@
     border-radius: 2px;
 }
 /* With Search */
-.withsearch {
+/* .withsearch {
     height: var(--withsearch-height); 
     display: flex;
     align-items: center;
- }
+ } */
  
  .headerlogo {
      width: 220px;
@@ -389,7 +389,6 @@
  }
  
  .searchbtn {
-     /*background-color: #89d4dd; */
      border: none;
      height: 40px;
      width: 60px;
@@ -547,8 +546,7 @@ div.background-content{
 div.info{
     position:absolute;
     font-size:15px;
-    top:0;
-    margin-top:400px;
+    bottom:45px;
     width:100%;
     display:flex;
     justify-content:center;
@@ -565,7 +563,7 @@ div.info h2{
 .navigation-manual{
     position:absolute;
     width:100%;
-    margin-top:460px;
+    bottom:26px;
     display:flex;
     justify-content:center;
 }
@@ -597,7 +595,7 @@ div.info h2{
     display:flex;
     width:100%;
     justify-content:center;
-    margin-top:460px;
+    bottom:26px;
     position:absolute;
 }
 .navigation-auto div{
@@ -673,7 +671,8 @@ div.content-right div.description-baiviet p{
 }
 .background-random{
     padding-top:30px;
-    height:830px;
+    height:max-content;
+    margin-bottom:10px;
     display:flex;
 }
 .random-content{
@@ -710,10 +709,6 @@ div.content-right div.description-baiviet p{
     width:65%;
     margin-left:10px;
 }
-.description-content p{
-    font-size:14px;
-    color: var(--text-color);
-}
 .description-content a{
     font-size:18px;
     margin-bottom:10px;
@@ -723,7 +718,7 @@ div.content-right div.description-baiviet p{
 .description-content .XemThem{
     color: rgb(38, 0, 255);
 }
-div.description-content p{
+div.description-content > p{
     font-size:17px;
     width:100%;
     display: -webkit-box;
@@ -742,6 +737,7 @@ div.description-content h3:hover{
 }
 div.art{
     width:19%;
+    height:max-content;
     margin:50px 0 0 130px;
     counter-reset:section; /*khoi tao bo dem css*/
 }
@@ -780,34 +776,37 @@ div.art a p.country{
 .introduce-fcountry{
     font-size: 14px;
     line-height:20px;
+    display: -webkit-box;
+    -webkit-line-clamp: 6; /*số dòng xuất hiện trước khi ...*/
+    -webkit-box-orient: vertical; /*điều hướng dọc*/
+    overflow: hidden;
 }
 .background-chude{
     background-color:rgba(255,245,230,1);
 }
 .posts{
     padding-top:20px;
-    margin:1% 5% 0 5%;
+}
+.posts .title{
+    margin-left:50px;
 }
 .frame-posts{
     display:flex;
     flex-wrap:wrap;
     width:100%;
+    justify-content: center;
 }
 .post{
-    width:23.3%;
-    height:400px;
+    width:22%;
+    min-width:250px;
+    height:420px;
     background-color:rgb(255, 255, 255);
     display:flex;
-    justify-content:center;
-    margin-right:20px;
+    margin-right:15px;
     margin-bottom:20px;
 }
-.post:last-child{
-    margin-right:0;
-}
 .post a{
-    width:80%;
-    padding:22px 0 18px 0;
+    padding:23px;
     text-decoration:none;
     color:var(--text-color);
 }
@@ -845,6 +844,7 @@ div.art a p.country{
     text-align:center;
     font-size:30px;
     padding-bottom:10px;
+    margin-bottom:0;
 }
 /* Footer */
 .footer {
