@@ -81,22 +81,22 @@
                     
                     <div class="headersearch">
                         <div class="inputwrap">
-                            <input type="text" class="searchinput" placeholder="Tìm kiếm">
+                            <input type="text" class="searchinput" id="searchinput" placeholder="Tìm kiếm">
                             
                             <!-- Search History -->
-                            <div class="searchhistory">
+                             <div class="searchhistory">
                                 <h3 class="historyheading">Lịch sử tìm kiếm</h3>
                                 <ul class="historylist">
                                     <li class="historyitem">
-                                        <a href="">Bún bò nước lèo vị trà sữa</a>
+                                        <a href="" id="output-history1"></a>
                                     </li>
                                     <li class="historyitem">
-                                        <a href="">Cơm chang canh nước súp sting</a>
+                                        <a href="" id="output-history2"></a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
-                        <button class="searchbtn">
+                        <button class="searchbtn" onclick="search()">
                             <i class="fa-solid fa-magnifying-glass searchicon"></i>
                         </button>
                     </div>
@@ -112,17 +112,17 @@
             <div class="danhmuc">
                 <ul>
                         <li class="food">
-                            <a href="#" class="food">Đồ Ăn
+                            <a href="index.html" class="food">Đồ Ăn
                                 <i class="fa-solid fa-utensils"></i>
                             </a>
                         </li>
                         <li class="drink">
-                            <a href="#" class="drink">Thức Uống
+                            <a href="index1.html" class="drink">Thức Uống
                                 <i class="fa-solid fa-martini-glass-citrus"></i>
                             </a>
                         </li>
                         <li class="event">
-                            <a href="#" class="event">Sự Kiện
+                            <a href="index2.html" class="event">Sự Kiện
                                 <i class="fa-solid fa-torii-gate"></i>
                             </a>
                         </li>
@@ -148,15 +148,15 @@
                         <a href="#">
                             <img src="./assets/images/food1.png" alt="Kem">
                             <div class="info">
-                                <h2>MrP - BingSu & Tea - Đà Nẵng</h2>
+                                <h2 id="item-search">MrP - BingSu & Tea - Đà Nẵng</h2>
                             </div>
                         </a>
                     </div>
                     <div class="slide">
-                        <a href="#">
+                        <a href="index3.html">
                             <img src="./assets/images/food2.png" alt="">
                             <div class="info">
-                                <h2>Bánh bèo Huế - Huế</h2>
+                                <h2 id="item-search">Bánh bèo Huế - Huế</h2>
                             </div>
                         </a>
                     </div>
@@ -164,7 +164,7 @@
                         <a href="#">
                             <img src="./assets/images/food3.jpg" alt="">
                             <div class="info">
-                                <h2>Bún bò Huế O Phượng - Huế</h2>
+                                <h2 id="item-search">Bún bò Huế O Phượng - Huế</h2>
                             </div>
                         </a>
                     </div>
@@ -172,7 +172,7 @@
                         <a href="#">
                             <img src="./assets/images/food4.jpg" alt="">
                             <div class="info">
-                                <h2>Bánh khọt bà Hai - Vũng Tàu</h2>
+                                <h2 id="item-search">Bánh khọt bà Hai - Vũng Tàu</h2>
                             </div>
                         </a>
                     </div>
@@ -205,7 +205,7 @@
                     <a href="#">
                         <div class="img"><img src="./assets/images/Anvat8768.jpg" alt="Cửa Hàng"></div>
                         <div class="description-baiviet">
-                            <h3>Trà sữa & Ăn vặt 8678</h3>
+                            <h3 id="item-search">Trà sữa & Ăn vặt 8678</h3>
                             <p>8678 là tiệm trà sữa đặc sản của Đà Lạt với màu sắc nhận diện vàng đen nổi bật đặc trưng riêng của quán, được tạo dựng lên bởi những người con của Đà Lạt với đam mê mang đến hương vị trà sữa riêng dành cho người Đà Lạt.</p>
                         </div>
                     </a>
@@ -214,7 +214,7 @@
                     <a href="#">
                         <div class="img"><img src="./assets/images/Banhmi.jpg" alt="Bánh Mì Xí Mại"></div>
                         <div class="description-baiviet">
-                            <h3>Bánh Mì Xíu Mại Hồng - Yersin</h3>
+                            <h3 id="item-search">Bánh Mì Xíu Mại Hồng - Yersin</h3>
                             <p>Dù ai ăn ngược về xuôi thì đây vẫn là chỗ bánh mì xíu mại đỉnk kao ở Đà Lạt này nha, nằm ở số 72 Yersin nè. </p>
                         </div>
                     </a>
@@ -223,7 +223,7 @@
                     <a href="#">
                         <div class="img"><img src="./assets/images/laubo.jpg" alt="Lẩu Bò"></div>
                         <div class="description-baiviet">
-                            <h3>Lẩu bò bắp hoa - Đà Lạt</h3>
+                            <h3 id="item-search">Lẩu bò bắp hoa - Đà Lạt</h3>
                             <p>Lẩu bò bắp hoa có nước dùng đậm đà với thịt bò bằm và mùi hương đặc trưng của bò, vị thanh ngọt hợp chuẩn vị miền Nam của mình lắm. Gọi một phần 4 người ăn thôi mà đã thấy muốn “sấp mặt” với dàn topping bò tái, bắp bò, nạm bò, đặc biệt là bò viên phô mai siêu ngon làm mình phải gọi thêm 1 dĩa nữa nè. Chấm thêm tí chao nữa, ngon tuyệt vời ông mặt trời.</p>
                         </div>
                     </a>
@@ -232,7 +232,7 @@
                     <a href="#">
                         <div class="img"><img src="./assets/images/ganuong.jpg" alt="Gà Nướng Cơm Lam"></div>
                         <div class="description-baiviet">
-                            <h3>Gà nướng và Cơm lam Trên Đỉnh Đồi Trăng</h3>
+                            <h3 id="item-search">Gà nướng và Cơm lam Trên Đỉnh Đồi Trăng</h3>
                             <p>Cái tên nhà hàng nghe thi vị dễ sợ luôn, đến đây bạn vừa được thưởng thức những món ngon, vừa được chiêm ngưỡng view đồi núi, với cả một vườn hoa đầy màu sắc, chụp hình sống ảo thì đúng bài luôn. Nhà hàng có món gà nướng và cơm lam ngon lắm nhé, những chú gà được nuôi trong vườn, sạch, an toàn, chế biến ngay tại chỗ, với công thức đặc biệt, thưởng thức một lần thôi là nhớ mãi nhé.</p>
                         </div>
                     </a>
@@ -255,7 +255,7 @@
                     </div>
                     <div class="description-content">
                         <a href="#">
-                            <h3>Top 15 địa điểm ăn tối ngon nhất định phải thử ở Hà Nội 2023</h3>
+                            <h3 id="item-search">Top 15 địa điểm ăn tối ngon nhất định phải thử ở Hà Nội 2023</h3>
                         </a>
                         <p>"Tối nay ăn gì?" sẽ không còn là câu hỏi khó cho bạn mỗi khi lựa chọn đồ ăn nữa với danh sách 15 món
                            ngon cho bữa tối tại Hà Nội của mình dưới đây. Tất cả những địa điểm này mình đã tự trải nghiệm và
@@ -274,7 +274,7 @@
                     </div>
                     <div class="description-content">
                         <a href="#">
-                            <h3>Truy tìm hàng Nem chua rán ngon nhất ngõ Tạm Thương</h3>
+                            <h3 id="item-search">Truy tìm hàng Nem chua rán ngon nhất ngõ Tạm Thương</h3>
                         </a>
                         <p>Ngõ Tạm Thương tuy chỉ dài 10m nhưng có tới tận 7 hàng nem chua rán. Hãy cùng mình tìm kiếm 
                            hàng nào ngon nhất nhé!</p>
@@ -292,7 +292,7 @@
                     </div>
                     <div class="description-content">
                         <a href="#">
-                            <h3>Những món ăn sáng ở Hà Nội có thể bạn mê mẩn!</h3>
+                            <h3 id="item-search">Những món ăn sáng ở Hà Nội có thể bạn mê mẩn!</h3>
                         </a>
                         <p>Sáng sớm tạt qua ngã tư Lý Thường Kiệt - Hàng Bài làm nắm xôi cô Mây hay ghé qua quán phở quen “đá” một bát phở tái chín. No cái bụng
                         xong lại thong dong uống thêm cốc trà đá mát lạnh, bạn sẽ cảm thấy Hà Nội đáng yêu vô cùng. Bữa sáng của Hà Nội quả thật có sức “sát 
@@ -311,7 +311,7 @@
                     </div>
                     <div class="description-content">
                         <a href="#">
-                            <h3>24h ăn sập Hà Nội cùng mình nhé!</h3>
+                            <h3 id="item-search">24h ăn sập Hà Nội cùng mình nhé!</h3>
                         </a>
                         <p>Việc sáng nay ăn gì, trưa nay ăn gì, tối nay ăn gì, ăn xong rồi đi ăn gì nữa đây sẽ không còn làm bạn bối rối nữa. Dưới đây mình sẽ
                            chỉ cho các bạn một số địa điểm ăn uống thả ga trong 24h ở Hà Nội luôn. Mình hi vọng chắc ai đó sẽ cần!</p>
@@ -330,25 +330,25 @@
                 </div>
                 <div class="count">
                     <a href="#">
-                        <p class="country">Ẩm Thực Nhật Bản</p>
-                        <p class="title-fcountry">Tinh hoa ẩm thực Nhật Bản</p>
-                        <p class="introduce-fcountry">Ẩm thực của đất nước “mặt trời mọc” là cả “một kho tàng” thú vị. Không chỉ cầu kỳ trong cách chế biến, bài trí món ăn mà phong vị nơi đây cũng vô cùng đa dạng.</p>
+                        <p class="country" id="item-search">Ẩm Thực Nhật Bản</p>
+                        <p class="title-fcountry" id="item-search">Tinh hoa ẩm thực Nhật Bản</p>
+                        <p class="introduce-fcountry" id="item-search">Ẩm thực của đất nước “mặt trời mọc” là cả “một kho tàng” thú vị. Không chỉ cầu kỳ trong cách chế biến, bài trí món ăn mà phong vị nơi đây cũng vô cùng đa dạng.</p>
                     </a>
                 </div>
                 <hr>
                 <div class="count">
                     <a href="#">
-                        <p class="country">Ẩm Thực Trung Quốc</p>
-                        <p class="title-fcountry">Văn hóa ẩm thực Tứ Xuyên Trung Quốc </p>
-                        <p class="introduce-fcountry">Ẩm thực Tứ Xuyên là một trong 4 hệ ẩm thực lớn của nền ẩm thực Trung Hoa. Ẩm thực Tứ Xuyên mang trong mình một nét riêng, đặc trưng mà không vùng nào có được.</p>
+                        <p class="country" id="item-search">Ẩm Thực Trung Quốc</p>
+                        <p class="title-fcountry" id="item-search">Văn hóa ẩm thực Tứ Xuyên Trung Quốc </p>
+                        <p class="introduce-fcountry" id="item-search">Ẩm thực Tứ Xuyên là một trong 4 hệ ẩm thực lớn của nền ẩm thực Trung Hoa. Ẩm thực Tứ Xuyên mang trong mình một nét riêng, đặc trưng mà không vùng nào có được.</p>
                     </a>
                 </div>
                 <hr>
                 <div class="count">
                     <a href="#">
-                        <p class="country">Ẩm Thực Pháp</p>
-                        <p class="title-fcountry">Sự sang trọng và đẳng cấp của nền ẩm thực Pháp</p>
-                        <p class="introduce-fcountry">Ẩm thực Pháp luôn là niềm tự hào của người dân đối với những nước khác trên thế giới. Những món ăn ở đây được tạo ra từ sự tinh tế và cầu kỳ trong cách chế biến cũng như bài trí món ăn.</p>
+                        <p class="country" id="item-search">Ẩm Thực Pháp</p>
+                        <p class="title-fcountry" id="item-search">Sự sang trọng và đẳng cấp của nền ẩm thực Pháp</p>
+                        <p class="introduce-fcountry" id="item-search">Ẩm thực Pháp luôn là niềm tự hào của người dân đối với những nước khác trên thế giới. Những món ăn ở đây được tạo ra từ sự tinh tế và cầu kỳ trong cách chế biến cũng như bài trí món ăn.</p>
                     </a>
                 </div>
                 <!-- <hr>
@@ -375,7 +375,7 @@
                             <div class="title-post">Công thức</div>
                         </div>
                         <div class="content-post">
-                            <h4>Gà rán giòn</h4>
+                            <h4 id="item-search">Gà rán giòn</h4>
                             <div class="rating">
                                 <span>đánh giá: 5</span>
                                 <div class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
@@ -391,7 +391,7 @@
                             <div class="title-post">Japanese Food</div>
                         </div>
                         <div class="content-post">
-                            <h4>Tempura</h4>
+                            <h4 id="item-search">Tempura</h4>
                             <div class="rating">
                                 <span>đánh giá: 4.8</span>
                                 <div class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
@@ -407,7 +407,7 @@
                             <div class="title-post">Review</div>
                         </div>
                         <div class="content-post">
-                            <h4>Sườn cốt lết chiên xù</h4>
+                            <h4 id="item-search">Sườn cốt lết chiên xù</h4>
                             <div class="rating">
                                 <span>đánh giá: 4.93</span>
                                 <div class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
@@ -423,7 +423,7 @@
                             <div class="title-post">Công thức</div>
                         </div>
                         <div class="content-post">
-                            <h4>Mực chiên nước mắm</h4>
+                            <h4 id="item-search">Mực chiên nước mắm</h4>
                             <div class="rating">
                                 <span>đánh giá: 4.78</span>
                                 <div class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
@@ -439,7 +439,7 @@
                             <div class="title-post">Công thức</div>
                         </div>
                         <div class="content-post">
-                            <h4>Mực chiên xù</h4>
+                            <h4 id="item-search">Mực chiên xù</h4>
                             <div class="rating">
                                 <span>đánh giá: 4.3</span>
                                 <div class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
@@ -455,7 +455,7 @@
                             <div class="title-post">Japanese Food</div>
                         </div>
                         <div class="content-post">
-                            <h4>Takoyaki - Nhật Bản</h4>
+                            <h4 id="item-search">Takoyaki - Nhật Bản</h4>
                             <div class="rating">
                                 <span>đánh giá: 5</span>
                                 <div class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
@@ -471,7 +471,7 @@
                             <div class="title-post">Công thức</div>
                         </div>
                         <div class="content-post">
-                            <h4>Cá Thu Chiên</h4>
+                            <h4 id="item-search">Cá Thu Chiên</h4>
                             <div class="rating">
                                 <span>đánh giá: 4.78</span>
                                 <div class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
@@ -487,7 +487,7 @@
                             <div class="title-post">Review</div>
                         </div>
                         <div class="content-post">
-                            <h4>Cá hồi chiên bơ tỏi</h4>
+                            <h4 id="item-search">Cá hồi chiên bơ tỏi</h4>
                             <div class="rating">
                                 <span>đánh giá: 5</span>
                                 <div class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
@@ -510,7 +510,7 @@
                                 <div class="title-post">Đồ nướng</div>
                             </div>
                             <div class="content-post">
-                                <h4>Xiên nướng</h4>
+                                <h4 id="item-search">Xiên nướng</h4>
                                 <div class="rating">
                                     <span>đánh giá: 5</span>
                                     <div class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
@@ -526,7 +526,7 @@
                                 <div class="title-post">vegetable</div>
                             </div>
                             <div class="content-post">
-                                <h4>Salad rau trộn</h4>
+                                <h4 id="item-search">Salad rau trộn</h4>
                                 <div class="rating">
                                     <span>đánh giá: 4.8</span>
                                     <div class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
@@ -542,7 +542,7 @@
                                 <div class="title-post">vegetable</div>
                             </div>
                             <div class="content-post">
-                                <h4>Trái cây dầm</h4>
+                                <h4 id="item-search">Trái cây dầm</h4>
                                 <div class="rating">
                                     <span>đánh giá: 5</span>
                                     <div class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
@@ -558,7 +558,7 @@
                                 <div class="title-post">noodles</div>
                             </div>
                             <div class="content-post">
-                                <h4>Mì trộn</h4>
+                                <h4 id="item-search">Mì trộn</h4>
                                 <div class="rating">
                                     <span>đánh giá: 4.9</span>
                                     <div class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
@@ -574,7 +574,7 @@
                                 <div class="title-post">Ăn vặt</div>
                             </div>
                             <div class="content-post">
-                                <h4>Bắp xào bơ</h4>
+                                <h4 id="item-search">Bắp xào bơ</h4>
                                 <div class="rating">
                                     <span>đánh giá: 5</span>
                                     <div class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
@@ -590,7 +590,7 @@
                                 <div class="title-post">Ăn vặt</div>
                             </div>
                             <div class="content-post">
-                                <h4>Hột vịt lộn nướng muối ớt</h4>
+                                <h4 id="item-search">Hột vịt lộn nướng muối ớt</h4>
                                 <div class="rating">
                                     <span>đánh giá: 4.69</span>
                                     <div class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
@@ -606,7 +606,7 @@
                                 <div class="title-post">Buổi sáng</div>
                             </div>
                             <div class="content-post">
-                                <h4>Cá mồi & ốp la</h4>
+                                <h4 id="item-search">Cá mồi & ốp la</h4>
                                 <div class="rating">
                                     <span>đánh giá: 4.39</span>
                                     <div class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
@@ -622,7 +622,7 @@
                                 <div class="title-post">Buổi sáng</div>
                             </div>
                             <div class="content-post">
-                                <h4>Cơm cuộn</h4>
+                                <h4 id="item-search">Cơm cuộn</h4>
                                 <div class="rating">
                                     <span>đánh giá: 5</span>
                                     <div class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
@@ -645,7 +645,7 @@
                                     <div class="title-post">giảm cân</div>
                                 </div>
                                 <div class="content-post">
-                                    <h4>Ngũ cốc giảm cân</h4>
+                                    <h4 id="item-search">Ngũ cốc giảm cân</h4>
                                     <div class="rating">
                                         <span>đánh giá: 5</span>
                                         <div class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
@@ -661,7 +661,7 @@
                                     <div class="title-post">giảm cân</div>
                                 </div>
                                 <div class="content-post">
-                                    <h4>bánh mì đen & trứng ốp la</h4>
+                                    <h4 id="item-search">bánh mì đen & trứng ốp la</h4>
                                     <div class="rating">
                                         <span>đánh giá: 4.95</span>
                                         <div class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
@@ -677,7 +677,7 @@
                                     <div class="title-post">Giảm cân</div>
                                 </div>
                                 <div class="content-post">
-                                    <h4>Cơm gạo lức & ức gà</h4>
+                                    <h4 id="item-search">Cơm gạo lức & ức gà</h4>
                                     <div class="rating">
                                         <span>đánh giá: 4.98</span>
                                         <div class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
@@ -693,7 +693,7 @@
                                     <div class="title-post">Giảm cân</div>
                                 </div>
                                 <div class="content-post">
-                                    <h4>Nấm xào rau củ</h4>
+                                    <h4 id="item-search">Nấm xào rau củ</h4>
                                     <div class="rating">
                                         <span>đánh giá: 5</span>
                                         <div class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
@@ -709,7 +709,7 @@
                                     <div class="title-post">Giảm cân</div>
                                 </div>
                                 <div class="content-post">
-                                    <h4>Đậu phụ</h4>
+                                    <h4 id="item-search">Đậu phụ</h4>
                                     <div class="rating">
                                         <span>đánh giá: 5</span>
                                         <div class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
@@ -725,7 +725,7 @@
                                     <div class="title-post">Giảm cân</div>
                                 </div>
                                 <div class="content-post">
-                                    <h4>Trứng cuộn</h4>
+                                    <h4 id="item-search">Trứng cuộn</h4>
                                     <div class="rating">
                                         <span>đánh giá: 4.76</span>
                                         <div class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
@@ -741,7 +741,7 @@
                                     <div class="title-post">Giảm cân</div>
                                 </div>
                                 <div class="content-post">
-                                    <h4>Mì Ý xào thịt bò</h4>
+                                    <h4 id="item-search">Mì Ý xào thịt bò</h4>
                                     <div class="rating">
                                         <span>đánh giá: 4.96</span>
                                         <div class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
@@ -757,7 +757,7 @@
                                     <div class="title-post">Giảm cân</div>
                                 </div>
                                 <div class="content-post">
-                                    <h4>Salad cải xoăn & đậu gà</h4>
+                                    <h4 id="item-search">Salad cải xoăn & đậu gà</h4>
                                     <div class="rating">
                                         <span>đánh giá: 4.39</span>
                                         <div class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
@@ -940,6 +940,7 @@
             </div>
         </div>
     </div> -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <script src="./assets/js/main.js"></script>
 </body>
 </html>

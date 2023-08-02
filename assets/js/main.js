@@ -37,3 +37,35 @@ var gototop = document.getElementById("Gototop");
         clearInterval(x);
     },1)
  }
+  //Tìm kiếm
+ function search(){
+    var k= document.getElementById("searchinput");
+    var output1 = document.getElementById("output-history1");
+    var output2 = document.getElementById("output-history2");
+    var tmp;
+    if(k != null)
+    {
+        k = k.value
+        
+        var items = document.querySelectorAll("#item-search")
+        for(var i=0;i<items.length;i++)
+        {
+            var item=items[i].innerText;
+
+            if(item.toLowerCase().indexOf(k.toLowerCase())>=0)
+            {
+                items[i].style.borderBottom = "3px solid red";
+                tmp=output1.innerText;
+                output1.innerText=items[i].innerText;
+                output2.innerText=tmp;
+            }
+        }
+         setTimeout(function(){
+            for(var i=0;i<items.length;i++)
+            {
+             items[i].style.borderBottom = "none";
+            }
+         },5000)
+    }
+ }
+
