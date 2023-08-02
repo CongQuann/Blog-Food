@@ -42,7 +42,8 @@ html{
     margin-bottom:10px;
 }
 .title h2{
-    padding-bottom:5px;
+    padding:auto;
+    margin-bottom:5px;
 }
 /*Animation*/
 @keyframes fadein {

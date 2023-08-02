@@ -748,21 +748,20 @@ div.art a{
     text-decoration:none;
     color:var(--text-color);
     counter-increment:section; /*khoi tao bo dem css tang*/
-    padding-left: 50px;
+    padding-left: 60px;
     position: relative;
 }
 div.art a::before{
     content: counter(section); /*xuat gia tri bo dem css*/
     position: absolute;
-    top: 2px;
+    top: 3px;
     left: 0;
-    margin-right:4px;
     font-size: 60px;
     font-family: serif;
     color: #cbcbcb;
 }
 div.art a p{
-    margin-left:30px;
+    margin-left:35px;
     margin-bottom:8px;
 }
 div.art a p.country{
