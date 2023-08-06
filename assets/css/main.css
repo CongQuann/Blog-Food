@@ -509,6 +509,7 @@ div.danhmuc ul li a:hover::after{
     width:100%;
 }
 /*end thanh tab*/
+
 div.background-content{
     padding-top:20px;
     display:flex;
@@ -543,7 +544,7 @@ div.background-content{
     height:100%;
     z-index:1;
 }
-div.info{
+.info{
     position:absolute;
     font-size:15px;
     bottom:45px;
@@ -647,13 +648,13 @@ div.content-right div.description-baiviet{
     height:100%;
 }
 div.content-right div.baiviet .img{
-    width:50%;
+    width:60%;
     height:100%;
     display:flex;
     margin-right:10px;
 }
 div.content-right div.baiviet .img img{
-    height:150px;
+    height:140px;
     width:100%;
 }
 div.content-right div.description-baiviet h3{
@@ -737,7 +738,7 @@ div.description-content h3:hover{
 }
 div.art{
     width:19%;
-    height:max-content;
+    height:100%;
     margin:50px 0 0 130px;
     counter-reset:section; /*khoi tao bo dem css*/
 }
@@ -788,21 +789,20 @@ div.art a p.country{
     padding-top:20px;
 }
 .posts .title{
-    margin-left:50px;
+    margin-left:30px;
 }
 .frame-posts{
     display:flex;
     flex-wrap:wrap;
     width:100%;
-    justify-content: center;
 }
 .post{
-    width:22%;
-    min-width:250px;
+    width:21%;
     height:420px;
     background-color:rgb(255, 255, 255);
     display:flex;
-    margin-right:15px;
+    margin-left:30px;
+    margin-right:10px;
     margin-bottom:20px;
 }
 .post a{

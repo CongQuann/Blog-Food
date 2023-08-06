@@ -46,7 +46,12 @@ var gototop = document.getElementById("Gototop");
     if(k != null)
     {
         k = k.value
-        
+        tmp=output1.innerText;
+        output1.innerText=k;
+        if(tmp!==output1.innerText)
+        {
+            output2.innerText=tmp;
+        }
         var items = document.querySelectorAll("#item-search")
         for(var i=0;i<items.length;i++)
         {
@@ -55,9 +60,6 @@ var gototop = document.getElementById("Gototop");
             if(item.toLowerCase().indexOf(k.toLowerCase())>=0)
             {
                 items[i].style.borderBottom = "3px solid red";
-                tmp=output1.innerText;
-                output1.innerText=items[i].innerText;
-                output2.innerText=tmp;
             }
         }
          setTimeout(function(){

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food's Blog</title>
     <link rel="stylesheet" href="./assets/css/sup.css">
+    <link rel="stylesheet" href="./assets/css/mobile-content(short).css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <!--Reset Css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
@@ -19,7 +20,7 @@
                 <nav class="navbar">
                     <ul class="navlist">
                         <li class="navitem navhasnotify">
-                            <a href="" class="navlink">
+                            <a href="css:;" class="navlink">
                                 <i class="navicon fa-solid fa-bell"></i>
                                 Thông báo
                             </a>
@@ -80,22 +81,22 @@
                     
                     <div class="headersearch">
                         <div class="inputwrap">
-                            <input type="text" class="searchinput" placeholder="Tìm kiếm">
+                            <input type="text" class="searchinput" id="searchinput" placeholder="Tìm kiếm">
                             
                             <!-- Search History -->
                             <div class="searchhistory">
                                 <h3 class="historyheading">Lịch sử tìm kiếm</h3>
                                 <ul class="historylist">
                                     <li class="historyitem">
-                                        <a href="">Bún bò nước lèo vị trà sữa</a>
+                                        <a href="" id="output-history1"></a>
                                     </li>
                                     <li class="historyitem">
-                                        <a href="">Cơm chang canh nước súp sting</a>
+                                        <a href="" id="output-history2"></a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
-                        <button class="searchbtn">
+                        <button class="searchbtn" onclick="search()">
                             <i class="fa-solid fa-magnifying-glass searchicon"></i>
                         </button>
                     </div>
@@ -106,17 +107,17 @@
         <div class="danhmuc">
             <ul>
                     <li class="food">
-                        <a href="#" class="food">Đồ Ăn
+                        <a href="index.html" class="food">Đồ Ăn
                             <i class="fa-solid fa-utensils"></i>
                         </a>
                     </li>
                     <li class="drink">
-                        <a href="#" class="drink">Thức Uống
+                        <a href="index1.html" class="drink">Thức Uống
                             <i class="fa-solid fa-martini-glass-citrus"></i>
                         </a>
                     </li>
                     <li class="event">
-                        <a href="#" class="event">Sự Kiện
+                        <a href="index2.html" class="event">Sự Kiện
                             <i class="fa-solid fa-torii-gate"></i>
                         </a>
                     </li>
@@ -138,7 +139,7 @@
                 <div class="content">
                     <img src="assets/images/food2.png" alt="bánh bèo Huế">
                     <p>Huế từ lâu nổi tiếng mang vẻ đẹp mộng mơ, hữu tình. Khi đến với mảnh đất cố đô, ngoài việc được du ngoạn ngắm cảnh sắc thiên nhiên đẹp đẽ và đầy sức hút, du khách còn được thưởng thức những món ăn ngon được làm bởi bàn tay đầy khéo léo của người dân xứ Huế. Huế có rất nhiều đặc sản như bún bò, cơm hến, chè cung đình… Và một trong những đặc sản du lịch Huế mà du khách không nên bỏ lỡ khi du lịch tại vùng đất cố đô chính là bánh bèo Huế!</p>
-                    <h2>Bánh bèo - Đặc sản dân dã xứ Huế</h2>
+                    <h2 id="item-search">Bánh bèo - Đặc sản dân dã xứ Huế</h2>
                     <p>Trên mảnh đất cong cong hình chữ S, vùng đất nào cũng có bánh bèo từ Sài Gòn ra đến Hà Nội, nhưng tại sao đất cố đô lại nổi tiếng với món bánh bèo như vậy? Có điểm gì đặc biệt ở món bánh bèo xứ Huế, hãy cùng mình tiếp tục tìm hiểu nhé.</p>
                     <p>Nghe đến hai từ “bánh bèo” chắc hẳn cảm nhận đầu tiên của quý khách rất dân dã và thu hút phải không nào? Không biết quý khách có tò mò về tên của loại bánh này không nhỉ? Tên bánh đã được người dân gọi như thế từ rất lâu đời mà không biết rõ nguồn gốc của tên bánh này bắt đầu từ đâu và từ khi nào.</p>
                     <img src="assets/images/botbanhbeo.jpg" alt="bột bánh bèo">
@@ -149,21 +150,21 @@
                     <div class="opinion">
                         <p>Thật tuyệt vời khi được tận hưởng hương vị thơm ngon của bánh, của nhân nhị; vị ngọt ngào quyện với vị cay cay của nước chấm. Chỉ cần nhìn bát nước chấm thôi cũng thấy đủ sự hòa hợp sắc màu trong ẩm thực xứ Huế. Thêm vào đó, vị giòn rụm giòn tan của tóp mỡ, thơm lừng mùi hành phi cũng tăng thêm độ hấp dẫn cho một món ăn dân dã, bình dị.</p>
                     </div>
-                    <h2>Chia sẻ một số địa chỉ bán bánh bèo ngon ở Huế</h2>
+                    <h2 id="item-search">Chia sẻ một số địa chỉ bán bánh bèo ngon ở Huế</h2>
                     <p>Nếu có du lịch Huế, du khách dễ dàng tìm thưởng thức món ăn này. Sau đây mình sẽ giới thiệu cho các bạn một vài địa chỉ để thưởng thức bánh bèo khi tới đất cố đô:</p>
                     <img src="assets/images/banhbeo2.jpg" alt="bánh bèo tôm">
                     <i class="fa-solid fa-location-dot"></i>
-                    <h3>Gánh Ăn Hàng - Bánh Canh & Bánh Bèo</h3>
+                    <h3 id="item-search">Gánh Ăn Hàng - Bánh Canh & Bánh Bèo</h3>
                     <p>Quán này nằm trên đường Đặng Thai Mai, thành phố Huế. Quán này nằm ở vỉa hè, tuy quán nhỏ nhưng lại rất đông khách nhưng không đông khách. Món bánh bèo ở đây có giá rất rẻ. Chỉ cần khoảng 40.000 đồng là quý khách sẽ được ăn no bụng sau khi ra khỏi quán. Nếu quý khách nào muốn thưởng thức thêm các món như bánh nậm, bánh canh cua bột mì và bột lọc, bún mắm nêm thì ở quán sẵn sàng phục vụ.</p>
                     <p>Thời gian thích hợp để quý khách ghé vào quán là khoảng từ lúc 3 giờ chiều cho tới 19 giờ tối.</p>
                     <i class="fa-solid fa-location-dot"></i>
-                    <h3>Quán 109 - Bánh Bèo - Nậm - Lọc</h3>
+                    <h3 id="item-search">Quán 109 - Bánh Bèo - Nậm - Lọc</h3>
                     <p>Tọa lạc tại vị trí 109 Lê Huân, Thành phố Huế quán khá dễ tìm khi quý khách đặt chân tới vùng đất cố đô.</p>
                     <p>Quán đã có từ lâu đời và rất nổi tiếng với món bánh bèo. Món bánh bèo ở đây rất ngon vì thế quán thu hút khách tới ăn và mua về rất đông. Tới đây, quý khách có thể thưởng thức khay bánh bèo 20 chén chỉ với giá 40.000 đồng. Bột bánh ở quán dày mềm, được hấp tại chỗ. Để thưởng thức món bánh ngon đúng điệu, quý khách có thể rưới lên bánh một ít nước mắm ngọt và một ít ớt</p>
                     <p>Quán mở của từ 6h00 đến 21h00.</p>
                     <img src="assets/images/banhbeo3.jpg" alt="bánh bèo tôm tươi">
                     <i class="fa-solid fa-location-dot"></i>
-                    <h3>Bánh Bèo - Nậm & Lọc - Trần Phú</h3>
+                    <h3 id="item-search">Bánh Bèo - Nậm & Lọc - Trần Phú</h3>
                     <p>Quán này cũng lâu đời tại Huế, có diện tích khá rộng, bàn ghế khá sạch sẽ thoải mái để quý khách ăn uống. Quán này rất đông khách. Món bánh bèo của quán rất ngon. Bánh bèo ở đây có tôm chấy, hành phi, tóp mỡ nên chỉ cần nhìn qua thôi là đã thấy muốn thưởng thức liền rồi. Giá cả cũng cực “hạt dẻ”, một khay bánh giá khoảng 20.000 đồng nhưng thực khách có thể ăn no căng bụng.</p>
                     <p>Giờ mở của quán từ 15 giờ 00 đến 18 giờ 00.</p>
                     <p>Ngoài ra còn có một số quán có món bánh bèo ngon mà quý khách có thể ghé để thưởng thức khi đến Huế như sau:</p>
@@ -286,5 +287,6 @@
             </div>
         </footer>
     </div>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <script src="./assets/js/main.js"></script>
 </body>

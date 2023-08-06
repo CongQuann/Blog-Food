@@ -1,0 +1,72 @@
+/*design tablet and mobile width < 1024px*/
+@media screen and (max-width:1024px){
+    .container{
+        width:80%;
+    }
+}
+
+/*design mobile width < 740px*/
+@media screen and (max-width:740px){
+    .header{
+        height:160px;
+    }
+    .navnotify {
+        left: 0;
+        width: 200px;
+    }
+    .navnotify::before {
+        content: "";
+        border-width: 5px 3px;
+        position: absolute;
+        left: 0px;
+        top:-10px;
+    }
+    .withsearch{
+        flex-direction: column;
+    }
+    .headersearch {
+        width: 100%;
+        margin-left: 0;
+    }
+    .content img{
+        height:230px;
+        margin-bottom:3.8rem;   
+    }
+    .page-title{
+        line-height:3rem;
+        padding-bottom:4rem;
+    }
+    .page-title h1{
+        line-height:5rem;
+        font-size: 3.2rem;
+    }
+}
+
+/*design tablet width >= 740px and width < 1024px*/
+@media screen and (min-width:740px) and (max-width:1024px){
+    .page-title h1{
+        font-size: 5rem;
+    }
+    .content img{
+        height:450px;
+        margin-bottom:3.8rem;   
+    }
+}
+
+/*design fold phone*/
+@media screen and (max-width:350px){
+    div.danhmuc ul li a{
+        font-size:11.5px;
+    }
+    .page-title h1{
+        font-size: 2.4rem;;
+        line-height:4rem;
+    }
+    .content img{
+        height:200px;
+        margin-bottom:3.8rem;   
+    }
+    .info{
+        font-size:10px;
+    }
+}
