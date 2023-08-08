@@ -78,8 +78,10 @@
     cursor: default; 
     transform-origin: top right; /*chỉ định nơi bắt đầu animation*/
     animation: notifygrowth ease .2s;
+    border-radius: 3px;
     display: none;
-    z-index:90;
+    z-index: 9;
+
 }
 
 /*tạo một lớp giả làm cầu nối hover giữa tb và bảng tb*/
@@ -87,7 +89,7 @@
     content: "";
     border-width: 20px 50px;
     border-style: solid;
-    border-color: transparent transparent whitesmoke transparent;
+    border-color: transparent transparent #ecececdf transparent;
     position: absolute;
     right: 0px;
     top: -30px;
@@ -131,10 +133,6 @@
 
 .notiitem:hover {
     background-color:#d6d5d5;
-}
-
-.notiviewed {
-    background-color:rgb(212, 212, 212);
 }
 
 .notilink {
@@ -188,132 +186,11 @@
     font-weight: 400;
 }
 
-/* auth modal */
-
-.mainform {
-    width: 500px;
-    background-color: rgb(235, 251, 251);
-    border-radius: 5px;
-}
-
-.formcontainer {
-    padding: 0 32px;
-}
-
-.mainheader {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.mainheading {
-    font-size: 2.2rem;
-    font-weight: 400;
-    color: var(--text-color);
-}
-
-
-.forminput {
-    width: 90%;
-    height: 40px;
-    margin: 15px 5px 0 25px;
-    padding: 0 12px;
-    font-size: 1.4rem;
-    border: 1px solid var(--border-color);
-    border-radius: 3px;
-}
-
-.mainconfirm {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-
-.mainpolicy {
-   font-size: 1.3rem;
-    line-height: 1.6rem;
-    width: 80%;
-}
-
-.policylink {
-    color: var(--primary-color);
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.question {
-    margin-top: 20px;
-    font-size: 1.3rem;
-    text-align: center;
-}
-
-.switch {
-    text-decoration: none;
-    font-weight: 500;
-    color: var(--primary-color);
-    cursor: pointer;
-}
-
-.mainsocials {
-    background-color: var(--primary-color);
-    display: flex;
-    justify-content: space-between;
-    margin-top: 15px;
-}
-
-.btnicon {
-    width: 100%;
-    margin-bottom: 15px;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 25px;
-}
-
-.btn.btnicon i {
-    margin-right: 10px;
-    padding: 2px;
-}
-
-.btn.btnfacebook {
-    background-color: #3A5A98;
-    color: var(--white-color);
-}
-
-.btn.btngoogle {
-    background-color: var(--white-color);
-}
-
-.btn:hover {
-    background-color: rgba(0, 0, 0, 0.25);
-}
-
-.mainhelp {
-    display: flex;
-    justify-content: flex-end;
-    margin: 15px 27px 0 0;
-}
-
-.helplink {
-    font-size: 1.2rem;
-    text-decoration: none;
-    color: var(--primary-color);
-}
-
-.helpseparate {
-    display: block;
-    height: 15px;
-    margin: 0 16px;
-    border-left: 1px solid var(--border-color);
-}
-
 /* With Search */
 .withsearch {
-   height: var(--withsearch-height); 
-   display: flex;
-   align-items: center;
+    height: var(--withsearch-height); 
+    display: flex;
+    align-items: center;
 }
 
 .headerlogo {
@@ -322,7 +199,7 @@
 }
 
 .logoimg {
-    width: 70px;
+    width: 75px;
 }
 
 .logoname {
@@ -332,44 +209,16 @@
     align-items: center;
     text-align: center;
 }
+
 .headersearch {
     flex: 1;
+    width: 65%;
     height: 40px;
     background-color: var(--white-color);
     border-radius: 2px;
-}
-/* With Search */
-/* .withsearch {
-    height: var(--withsearch-height); 
+    margin-left: 50px;
     display: flex;
-    align-items: center;
- } */
- 
- .headerlogo {
-     width: 220px;
-     display: flex;
- }
- 
- .logoimg {
-     width: 70px;
- }
- 
- .logoname {
-     font-size: 3rem;
-     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-     display: flex;
-     align-items: center;
-     text-align: center;
- }
- 
- .headersearch {
-     width: 65%;
-     height: 40px;
-     background-color: var(--white-color);
-     border-radius: 2px;
-     margin-left: 50px;
-     display: flex;
- }
+}
  
  .inputwrap {
      flex: 1;

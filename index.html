@@ -9,8 +9,7 @@
     <link rel="stylesheet" href="./assets/css/base.css">
     <!--Reset Css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <!---->
-    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.4.0-web/css/all.min.css">
+    <!--Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
@@ -48,7 +47,7 @@
                                             </div>
                                         </a>
                                     </li>
-                                    <li class="notiitem notiviewed">
+                                    <li class="notiitem">
                                         <a href="" class="notilink">
                                             <div class="notiimg"><img src="./assets/images/KFC.jpg" alt="image" class="linkimg"></div>
                                             <div class="notiinfo">
@@ -69,8 +68,8 @@
                                 Trợ giúp
                             </a>
                         </li>
-                        <li class="navitem item-strong item-separate">Đăng Ký</li>
-                        <li class="navitem item-strong">Đăng nhập</li>
+                        <li class="navitem item-strong item-separate" onclick="openPopup()">Đăng ký</li>
+                        <li class="navitem item-strong" onclick="openPopup()">Đăng nhập</li>
                     </ul>
                 </nav>
 
@@ -763,6 +762,7 @@
                     </div>
                     <h1 class="thank">THANKS FOR COMING</h1>
         </div>
+        
         <footer class="footer">
             <div class="grid">
                 <div class="gridrow">
@@ -839,101 +839,7 @@
             </div>
         </footer>
     </div>
-    <!--Layout-->
-    <!-- <div class="modal">
-        <div class="modaloverlay">
-
-        </div>
-        <div class="modalbody"> -->
-            <!-- Register Form-->
-            <!-- <div class="mainform">
-                <div class="maincontainer">
-                    <div class="mainheader">
-                        <h3 class="mainheading">Đăng Ký</h3>
-                    </div>
-
-                    <div class="form">
-                        <div class="formgroup">
-                            <input type="text" class="forminput" id="email" placeholder="Nhập email của bạn">
-                        </div>
-                        <div class="formgroup">
-                            <input type="text" class="forminput" id="password" placeholder="Nhập mật khẩu">
-                        </div>
-                        <div class="formgroup">
-                            <input type="text" class="forminput" id="rppassword" placeholder="Nhập lại mật khẩu">
-                        </div>
-                    </div>
-
-                    <div class="mainconfirm">
-                        <p class="mainpolicy">
-                            Bằng cách đăng nhập hoặc đăng ký, bạn đồng ý với
-                            <a href="" class="policylink">Chính sách quy định của Wibu</a>
-                        </p>
-                    </div>
-                    <div class="maincontrols">
-                        <button class="btn">Đăng Ký</button>
-                        <div class="question">
-                            Bạn đã có tài khoản?
-                            <a href="" class="switch">Đăng nhập ngay</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="mainsocials">
-                    <a href="" class="btn btnicon btnfacebook">
-                        <i class="fa-brands fa-square-facebook"></i>
-                        Đăng ký bằng Facebook
-                    </a>
-                    <a href="" class="btn btnicon btngoogle">
-                        <i class="fa-brands fa-google"></i>
-                        Đăng ý bằng Google
-                    </a>
-                </div>
-            </div> -->
-            <!-- Login Form -->
-            <!-- <div class="mainform">
-                <div class="maincontainer">
-                    <div class="mainheader">
-                        <h3 class="mainheading">Đăng Nhập</h3>
-                    </div>
-
-                    <div class="form">
-                        <div class="formgroup">
-                            <input type="text" class="forminput" placeholder="Nhập email của bạn">
-                        </div>
-                        <div class="formgroup">
-                            <input type="text" class="forminput" placeholder="Nhập mật khẩu">
-                        </div>
-                    </div>
-
-                    <div class="mainforgot">
-                        <div class="mainhelp">
-                            <a href="" class="helplink">Quên mật khẩu</a>
-                            <span class="helpseparate"></span>
-                            <a href="" class="helplink">Cần trợ giúp ?</a>
-                        </div>
-                    </div>
-                    <div class="maincontrols">
-                        <button class="btn">Đăng Nhập</button>
-                        <div class="question">
-                            Bạn chưa có tài khoản?
-                            <a href="" class="switch">Đăng ký ngay</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="mainsocials">
-                    <a href="" class="btn btnicon btnfacebook">
-                        <i class="fa-brands fa-square-facebook"></i>
-                        Đăng nhập bằng Facebook
-                    </a>
-                    <a href="" class="btn btnicon btngoogle">
-                        <i class="fa-brands fa-google"></i>
-                        Đăng nhập bằng Google
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+   <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script> 
     <script src="./assets/js/main.js"></script>
 </body>
 </html>

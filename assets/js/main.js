@@ -1,16 +1,3 @@
-/*function signup(e) {
-    event.preventDefault();
-    let email = document.getElementById( "email").value;
-    let password = document.getElementById("password").value;
-    let rppassword = document.getElementById("rppassword").value;
-    let user = {
-        email : email,
-        password : password,
-        rppassword : rppassword,
-    };
-
-}*/
-//
 var counter=1;
   setInterval(function(){
       document.getElementById('radio' + counter).checked=true;
