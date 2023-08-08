@@ -29,31 +29,13 @@
                                 <header class="notihead">
                                     <h3>Thông báo mới</h3>
                                 </header>
-                                <ul class="notilist">
+                                <ul class="notilist" id="notilist">
                                     <li class="notiitem">
                                         <a href="" class="notilink">
                                             <div class="notiimg"><img src="./assets/images/banh mi ba huynh.jpg" alt="image" class="linkimg"></div>
                                             <div class="notiinfo">
                                                 <span class="notiname">Bánh mì Ô môi Bà Huynh tự hào với thương hiệu ô môi gần 40 năm tuổi tại Sài Thành</span>
                                                 <span class="notidescribe">Công Quận và 1412 người đã thích bài viết của bạn</span>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li class="notiitem">
-                                        <a href="" class="notilink">
-                                            <div class="notiimg"><img src="./assets/images/Com ba ghien.jpeg" alt="image" class="linkimg"></div>
-                                            <div class="notiinfo">
-                                                <span class="notiname">Cơm tấm Ba Ghiền được Michelin gọi tên, khách hàng tranh cãi, chủ quán nói gì?</span>
-                                                <span class="notidescribe">Quý Đào đã bình luận bài viết của bạn</span>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li class="notiitem notiviewed">
-                                        <a href="" class="notilink">
-                                            <div class="notiimg"><img src="./assets/images/KFC.jpg" alt="image" class="linkimg"></div>
-                                            <div class="notiinfo">
-                                                <span class="notiname">Hàng trăm người ngộ độc thực phẩm, chuỗi nhà hàng KFC phải đóng cửa</span>
-                                                <span class="notidescribe">Trần Hậu đã bình luận bài viết của bạn</span>
                                             </div>
                                         </a>
                                     </li>
@@ -111,20 +93,10 @@
                 <a href="javascript:;" onclick="goToTop()"><i class="fa-solid fa-house"></i></a>
             </div>
             <div class="danhmuc">
-                <ul>
-                        <li class="food">
-                            <a href="index.html" class="food">Đồ Ăn
+                <ul id="danhmuc">
+                        <li>
+                            <a href="index.html">Đồ Ăn
                                 <i class="fa-solid fa-utensils"></i>
-                            </a>
-                        </li>
-                        <li class="drink">
-                            <a href="index1.html" class="drink">Thức Uống
-                                <i class="fa-solid fa-martini-glass-citrus"></i>
-                            </a>
-                        </li>
-                        <li class="event">
-                            <a href="index2.html" class="event">Sự Kiện
-                                <i class="fa-solid fa-torii-gate"></i>
                             </a>
                         </li>
                     </ul>
@@ -150,30 +122,6 @@
                             <img src="./assets/images/food1.png" alt="Kem">
                             <div class="info">
                                 <h2 id="item-search">MrP - BingSu & Tea - Đà Nẵng</h2>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="slide">
-                        <a href="index3.html">
-                            <img src="./assets/images/food2.png" alt="">
-                            <div class="info">
-                                <h2 id="item-search">Bánh bèo Huế - Huế</h2>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="slide">
-                        <a href="#">
-                            <img src="./assets/images/food3.jpg" alt="">
-                            <div class="info">
-                                <h2 id="item-search">Bún bò Huế O Phượng - Huế</h2>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="slide">
-                        <a href="#">
-                            <img src="./assets/images/food4.jpg" alt="">
-                            <div class="info">
-                                <h2 id="item-search">Bánh khọt bà Hai - Vũng Tàu</h2>
                             </div>
                         </a>
                     </div>
@@ -333,7 +281,7 @@
                         <a href="#">
                             <p class="country" id="item-search">Ẩm Thực Nhật Bản</p>
                             <p class="title-fcountry" id="item-search">Tinh hoa ẩm thực Nhật Bản</p>
-                            <p class="introduce-fcountry" id="item-search">Ẩm thực của đất nước “mặt trời mọc” là cả “một kho tàng” thú vị. Không chỉ cầu kỳ trong cách chế biến, bài trí món ăn mà phong vị nơi đây cũng vô cùng đa dạng.</p>
+                            <p class="introduce-fcountry">Ẩm thực của đất nước “mặt trời mọc” là cả “một kho tàng” thú vị. Không chỉ cầu kỳ trong cách chế biến, bài trí món ăn mà phong vị nơi đây cũng vô cùng đa dạng.</p>
                         </a>
                     </div>
                     <hr>
@@ -341,7 +289,7 @@
                         <a href="#">
                             <p class="country" id="item-search">Ẩm Thực Trung Quốc</p>
                             <p class="title-fcountry" id="item-search">Văn hóa ẩm thực Tứ Xuyên Trung Quốc </p>
-                            <p class="introduce-fcountry" id="item-search">Ẩm thực Tứ Xuyên là một trong 4 hệ ẩm thực lớn của nền ẩm thực Trung Hoa. Ẩm thực Tứ Xuyên mang trong mình một nét riêng, đặc trưng mà không vùng nào có được.</p>
+                            <p class="introduce-fcountry">Ẩm thực Tứ Xuyên là một trong 4 hệ ẩm thực lớn của nền ẩm thực Trung Hoa. Ẩm thực Tứ Xuyên mang trong mình một nét riêng, đặc trưng mà không vùng nào có được.</p>
                         </a>
                     </div>
                     <hr>
@@ -349,7 +297,7 @@
                         <a href="#">
                             <p class="country" id="item-search">Ẩm Thực Pháp</p>
                             <p class="title-fcountry" id="item-search">Sự sang trọng và đẳng cấp của nền ẩm thực Pháp</p>
-                            <p class="introduce-fcountry" id="item-search">Ẩm thực Pháp luôn là niềm tự hào của người dân đối với những nước khác trên thế giới. Những món ăn ở đây được tạo ra từ sự tinh tế và cầu kỳ trong cách chế biến cũng như bài trí món ăn.</p>
+                            <p class="introduce-fcountry">Ẩm thực Pháp luôn là niềm tự hào của người dân đối với những nước khác trên thế giới. Những món ăn ở đây được tạo ra từ sự tinh tế và cầu kỳ trong cách chế biến cũng như bài trí món ăn.</p>
                         </a>
                     </div>
                 </div>
@@ -933,7 +881,7 @@
             </div>
         </div>
     </div> -->
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/read-data/ReadData-main.js"></script>
 </body>
 </html>
