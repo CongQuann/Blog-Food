@@ -497,7 +497,7 @@ div.content-right div.description-baiviet{
     height:100%;
 }
 div.content-right div.baiviet .img{
-    width:60%;
+    width:50%;
     height:100%;
     display:flex;
     margin-right:10px;
@@ -630,6 +630,9 @@ div.art a p.country{
     -webkit-line-clamp: 6; /*số dòng xuất hiện trước khi ...*/
     -webkit-box-orient: vertical; /*điều hướng dọc*/
     overflow: hidden;
+}
+.art hr:last-child{
+    display:none;
 }
 .background-chude{
     background-color:rgba(255,245,230,1);
