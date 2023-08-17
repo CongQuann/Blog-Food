@@ -28,31 +28,13 @@
                                 <header class="notihead">
                                     <h3>Thông báo mới</h3>
                                 </header>
-                                <ul class="notilist">
+                                <ul class="notilist" id="notilist">
                                     <li class="notiitem">
                                         <a href="" class="notilink">
                                             <div class="notiimg"><img src="./assets/images/banh mi ba huynh.jpg" alt="image" class="linkimg"></div>
                                             <div class="notiinfo">
                                                 <span class="notiname">Bánh mì Ô môi Bà Huynh tự hào với thương hiệu ô môi gần 40 năm tuổi tại Sài Thành</span>
                                                 <span class="notidescribe">Công Quận và 1412 người đã thích bài viết của bạn</span>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li class="notiitem">
-                                        <a href="" class="notilink">
-                                            <div class="notiimg"><img src="./assets/images/Com ba ghien.jpeg" alt="image" class="linkimg"></div>
-                                            <div class="notiinfo">
-                                                <span class="notiname">Cơm tấm Ba Ghiền được Michelin gọi tên, khách hàng tranh cãi, chủ quán nói gì?</span>
-                                                <span class="notidescribe">Quý Đào đã bình luận bài viết của bạn</span>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li class="notiitem notiviewed">
-                                        <a href="" class="notilink">
-                                            <div class="notiimg"><img src="./assets/images/KFC.jpg" alt="image" class="linkimg"></div>
-                                            <div class="notiinfo">
-                                                <span class="notiname">Hàng trăm người ngộ độc thực phẩm, chuỗi nhà hàng KFC phải đóng cửa</span>
-                                                <span class="notidescribe">Trần Hậu đã bình luận bài viết của bạn</span>
                                             </div>
                                         </a>
                                     </li>
@@ -110,20 +92,10 @@
                 <a href="javascript:;" onclick="goToTop()"><i class="fa-solid fa-house"></i></a>
             </div>
             <div class="danhmuc">
-                <ul>
+                <ul id="danhmuc">
                         <li class="food">
                             <a href="index.html" class="food">Đồ Ăn
                                 <i class="fa-solid fa-utensils"></i>
-                            </a>
-                        </li>
-                        <li class="drink">
-                            <a href="index1.html" class="drink">Thức Uống 
-                                <i class="fa-solid fa-martini-glass-citrus"></i>
-                            </a>
-                        </li>
-                        <li class="event">
-                            <a href="index2.html" class="event">Sự Kiện
-                                <i class="fa-solid fa-torii-gate"></i>
                             </a>
                         </li>
                     </ul>
@@ -152,30 +124,6 @@
                             </div>
                         </a>
                     </div>
-                    <div class="slide">
-                        <a href="#">
-                            <img src="./assets/images/vietnam-foodexpo-2023.jpg" alt="event">
-                            <div class="info">
-                                <h2 id="item-search">VietNam FoodExpo 2023</h2>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="slide">
-                        <a href="#">
-                            <img src="./assets/images/vietnam-foodtech-2023.jpg" alt="event">
-                            <div class="info">
-                                <h2 id="item-search">VietNam FoodTech 2023</h2>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="slide">
-                        <a href="#">
-                            <img src="./assets/images/trien-lam-quoc-te-cafe-viet-nam-2024.jpg" alt="event">
-                            <div class="info">
-                                <h2 id="item-search">Vietnam Int’l Café Show 2024</h2>
-                            </div>
-                        </a>
-                    </div>
                     <!--slide images end-->
                     <!--auto start-->
                     <div class="navigation-auto">
@@ -200,7 +148,7 @@
                     <h2 id="item-search">Bài Viết Mới Nhất</h2>
                     <hr>
                 </div>
-                <div class="child-right">
+                <div class="child-right" id="child-right">
                 <div class="baiviet">
                     <a href="#">
                         <div class="img"><img src="./assets/images/fes1.jpg" alt="saigontourist"></div>
@@ -210,39 +158,12 @@
                         </div>
                     </a>
                 </div>
-                <div class="baiviet">
-                    <a href="#">
-                        <div class="img"><img src="./assets/images/đại hội.png" alt="Trà sữa"></div>
-                        <div class="description-baiviet">
-                            <h3 id="item-search">Ngày hội Ẩm thực Năm Châu sẽ tổ chức tại TP.HCM</h3>
-                            <p>Chiều ngày 5 tháng 5, 2023 tại khách sạn Liberty Central Saigon City Point, 59 Pasteur, Quận 1 đã diễn ra buổi họp báo công bố “Ngày hội Ẩm thực Năm châu” (tên tiếng Anh: Five Continents Food Festival) năm 2023. </p>
-                        </div>
-                    </a>
-                </div>
-                <div class="baiviet">
-                    <a href="#">
-                        <div class="img"><img src="./assets/images/hoichothai.jpg" alt="Chè hạt sen"></div>
-                        <div class="description-baiviet">
-                            <h3 id="item-search">Hội chợ mua sắm và ẩm thực Thái Lan Tân Bình 2023</h3>
-                            <p>Hội chợ Thái Lan Tân Bình hay còn gọi là Hội chợ hàng Thái Lan tại Sài Gòn là sự kiện được diễn ra thường niên hàng năm.</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="baiviet">
-                    <a href="#">
-                        <div class="img"><img src="./assets/images/the-coffee-expo-2023.jpg" alt="Kem milo"></div>
-                        <div class="description-baiviet">
-                            <h3 id="item-search">THE COFFEE EXPO VIETNAM 2023</h3>
-                            <p>Là sự kiện thương mại nổi bật trong ngành cà phê, trà và bánh ngọt, The Coffee Expo Vietnam 2023 sẽ được tổ chức vào ngày 02 – 04/11/2023 tại Trung tâm Hội nghị và Triển lãm Sài Gòn (SECC), Quận 7, TP.HCM.</p>
-                        </div>
-                    </a>
-                </div>
             </div>
             </div>
            </div>
            <div class="background-random">
             <div class="random-content">
-                <div class="child-random">
+                <div class="child-random" id="child-random">
                     <div class="title">
                         <h2 id="item-search">Bài Viết Ngẫu Nhiên</h2>
                         <hr>
@@ -264,60 +185,9 @@
                         <p>February 16, 2023</p>
                     </div>
                 </div>
-                <div class="content">
-                    <div class="img">
-                        <a href="#">
-                            <img src="./assets/images/learn-play-festival-lapf-2023.jpg" alt="chè trứng">
-                        </a>
-                    </div>
-                    <div class="description-content">
-                        <a href="#">
-                            <h3 id="item-search">LAPF 2023 – LEARN & PLAY FESTIVAL</h3>
-                        </a>
-                        <p>LAPF 2023 – Learn & Play Festival được tổ chức tại Trung tâm Thương mại Thế giới Thành phố mới Bình Dương (WTC EXPO), từ ngày 14/09/2023 đến ngày 16/09/2023.</p>
-                        <a href="#">
-                            <p class="readmore">Xem thêm</p>
-                        </a>
-                        <p>June 01, 2023</p>
-                    </div>
-                </div>
-                <div class="content">
-                    <div class="img">
-                        <a href="#">
-                            <img src="./assets/images/lienhoanamthuc.jpg" alt="sữa">
-                        </a>
-                    </div>
-                    <div class="description-content">
-                        <a href="#">
-                            <h3 id="item-search">Liên hoan “Ẩm thực Hương sắc Phương Nam" năm 2023</h3>
-                        </a>
-                        <p>Liên hoan "Ẩm thực Hương sắc Phương Nam" là sự kiện định kỳ của Công ty Cổ phần Dịch vụ - Du lịch Phú Thọ và các đơn vị Thành viên Saigontourist Group tổ chức tại Công viên Văn hóa Đầm Sen. Đây cũng là dịp tôn vinh và giới thiệu đến du khách trong nước và quốc tế các giá trị văn hóa ẩm thực của Việt Nam nói chung và của vùng đất phương Nam nói riêng.</p>
-                        <a href="#">
-                            <p class="readmore">Xem thêm</p>
-                        </a>
-                        <p>May 22, 2023</p>
-                    </div>
-                </div>
-                <div class="content">
-                    <div class="img">
-                        <a href="#">
-                            <img src="./assets/images/bun.jpg" alt="cà phê trứng">
-                        </a>
-                    </div>
-                    <div class="description-content">
-                        <a href="#">
-                            <h3 id="item-search">Sắp diễn ra Lễ hội ẩm thực “Tinh hoa nghề bún” 2023</h3>
-                        </a>
-                        <p>Tại Festival Nghề truyền thống Huế 2023 này, những nét tinh hoa của nghề bún sẽ được vinh danh trong Lễ hội Ẩm thực. Dự kiến, Lễ hội diễn ra từ ngày 29/4 - 2/5 tại công viên Thương Bạc, TP. Huế (Thừa Thiên Huế).</p>
-                        <a href="#">
-                            <p class="readmore">Xem thêm</p>
-                        </a>
-                        <p>April 19, 2023</p>
-                    </div>
-                </div>
                 </div>
             </div>
-            <div class="art">
+            <div class="art" id="art">
                 <div class="title">
                     <h2 id="item-search">Ẩm Thực & Thế Giới</h2>
                     <hr>
@@ -330,21 +200,6 @@
                     </a>
                 </div>
                 <hr>
-                <div class="count">
-                    <a href="#">
-                        <p class="country" id="item-search">Ý</p>
-                        <p class="title-fcountry" id="item-search">Lễ hội Napoli Pizza Village</p>
-                        <p class="introduce-fcountry">Trình diễn nhào bột, các lớp dạy và những chiếc bánh pizza ngon tuyệt tại lễ hội Napoli Pizza Village. Hàng năm, nơi khởi đầu của pizza sẽ tổ chức lễ hội kéo dài 2 tuần chỉ để vinh danh món ăn được yêu thích nhất tại đây.</p>
-                    </a>
-                </div>
-                <hr>
-                <div class="count">
-                    <a href="#">
-                        <p class="country">Úc</p>
-                        <p class="title-fcountry">Lễ hội Ẩm thực và Rượu vang tại Melbourne</p>
-                        <p class="introduce-fcountry">Hơn 300 sự kiện để tham gia, bao gồm các gian hàng pop-up và các bữa ăn đạt kỷ lục tại Melbourne.</p>
-                    </a>
-                </div>
             </div>
             </div>
         </div>
@@ -353,7 +208,7 @@
             <div class="title">
                 <h2 id="item-search">Lễ hội ẩm thực nổi tiếng</h2>
             </div>
-            <div class="frame-posts">
+            <div class="frame-posts" id="frame-posts-popular">
                 <div class="post">
                     <a href="#">
                         <div class="img-post">
@@ -362,91 +217,11 @@
                         </div>
                         <div class="content-post">
                             <h4 id="item-search">Pizzafest</h4>
+                            <div class="rating">
+                                <span>đánh giá: 5</span>
+                                <div class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                            </div>
                             <p>Nếu là tín đồ của pizza, một trong những trải nghiệm bạn không thể bỏ qua với chuyến du lịch sau đại dịch đó là hòa vào đám đông tại Naple, Ý trong lễ hội Pizzafest nổi tiếng. </p>
-                        </div>
-                    </a>
-                </div>
-                <div class="post">
-                    <a href="#">
-                        <div class="img-post">
-                            <img src="assets/images/bia.jpg" alt="fest">
-                            <div class="title-post">Bia</div>
-                        </div>
-                        <div class="content-post">
-                            <h4 id="item-search">Lễ hội Oktoberfest</h4>
-                            <p>Nhắc đến những lễ hội ẩm thực nổi tiếng thế giới để các tín đồ ăn uống thỏa sức thưởng thức bia mát lạnh, là nhớ ngay tới Oktoberfest.</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="post">
-                    <a href="#">
-                        <div class="img-post">
-                            <img src="assets/images/banhbao.jpg" alt="fest">
-                            <div class="title-post">Bánh bao</div>
-                        </div>
-                        <div class="content-post">
-                            <h4 id="item-search">Lễ hội bánh bao</h4>
-                            <p>Bạn có ứa nước miếng khi nghĩ đến những chiếc bánh bao ẩm mềm và ngon ngọt không? Nếu có, thì đích thị lễ hội ẩm thực thế giới này là dành cho bạn. </p>
-                        </div>
-                    </a>
-                </div>
-                <div class="post">
-                    <a href="#">
-                        <div class="img-post">
-                            <img src="assets/images/catrich.jpg" alt="fest">
-                            <div class="title-post">Cá Trích</div>
-                        </div>
-                        <div class="content-post">
-                            <h4 id="item-search">Lễ hội cá trích </h4>
-                            <p>Lễ hội cá trích là một trong những lễ hội ẩm thực nổi tiếng trên khắp thế giới. Vào mỗi tháng 4, những đàn cá trích bơi vào vịnh Ringkobing ở Đan Mạch để đẻ trứng và đó cũng là thời điểm ngư dân đánh bắt cá sôi nổi nhất để chuẩn bị cho lễ hội cá trích tại đây. </p>
-                        </div>
-                    </a>
-                </div>
-                <div class="post">
-                    <a href="#">
-                        <div class="img-post">
-                            <img src="assets/images/chay.jpg" alt="fest">
-                            <div class="title-post">Chay</div>
-                        </div>
-                        <div class="content-post">
-                            <h4 id="item-search">Lễ hội ăn chay</h4>
-                            <p>Tại Thái Lan, cứ tháng 10 hàng năm lại tổ chức lễ hội ăn chay với các cuộc diễu hành đầy màu sắc, âm nhạc và những món ăn thuần chay ngon nhất. </p>
-                        </div>
-                    </a>
-                </div>
-                <div class="post">
-                    <a href="#">
-                        <div class="img-post">
-                            <img src="assets/images/toi.jpg" alt="fest">
-                            <div class="title-post">Tỏi</div>
-                        </div>
-                        <div class="content-post">
-                            <h4 id="item-search">Lễ hội tỏi Gilroy</h4>
-                            <p>Đây là một lễ hội nổi tiếng ở Mỹ, được tổ chức hàng năm vào tháng 7 tại thành phố Gilroy, California.</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="post">
-                    <a href="#">
-                        <div class="img-post">
-                            <img src="assets/images/banhkep.jpg" alt="fest">
-                            <div class="title-post">Bánh kếp</div>
-                        </div>
-                        <div class="content-post">
-                            <h4 id="item-search">Lễ hội bánh kếp Maslenitsa, Nga</h4>
-                            <p>Đây là một trong những lễ hội ẩm thực thế giới năm 2021 và có lẽ là ngày lễ vui vẻ nhất ở mà bạn có thể tham gia khi du lịch Nga. </p>
-                        </div>
-                    </a>
-                </div>
-                <div class="post">
-                    <a href="#">
-                        <div class="img-post">
-                            <img src="assets/images/amthucdp.jpg" alt="fest">
-                            <div class="title-post">Ẩm thực</div>
-                        </div>
-                        <div class="content-post">
-                            <h4 id="item-search">Lễ hội ẩm thực đường phố</h4>
-                            <p>Lễ hội nổi tiếng thế giới này chắc chắn sẽ mang lại nụ cười trên khuôn mặt của tất cả những người yêu thích ẩm thực đường phố. </p>
                         </div>
                     </a>
                 </div>
@@ -456,7 +231,7 @@
                 <div class="title">
                     <h2 id="item-search">Ẩm thực tôn giáo</h2>
                 </div>
-                <div class="frame-posts">
+                <div class="frame-posts" id="frame-posts-ReligionCuisine">
                     <div class="post">
                         <a href="#">
                             <div class="img-post">
@@ -465,91 +240,11 @@
                             </div>
                             <div class="content-post">
                                 <h4 id="item-search">Kitô giáo và Mùa Chay</h4>
+                                <div class="rating">
+                                    <span>đánh giá: 4</span>
+                                    <div class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                                </div>
                                 <p>Mùa Chay đánh dấu 40 ngày dẫn đến cái chết và sự phục sinh của Chúa Giêsu. Trong thời gian này, nhiều Kitô hữu từ bỏ các thực phẩm hoặc hành động cụ thể để suy ngẫm về cuộc sống, đau khổ và hy sinh của Chúa Kitô.</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="post">
-                        <a href="#">
-                            <div class="img-post">
-                                <img src="assets/images/dothai.webp" alt="tongiao">
-                                <div class="title-post">Do Thái</div>
-                            </div>
-                            <div class="content-post">
-                                <h4 id="item-search">Yom Kippur và Purim</h4>
-                                <p>Trong Do Thái giáo, Yom Kippur, “Ngày Chuộc Tội”, là ngày linh thiêng nhất trong năm. Một ngày lễ khác của người Do Thái, Purim, liên quan đến việc gửi quà tặng thực phẩm cho bạn bè có thể bao gồm hamantashen...</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="post">
-                        <a href="#">
-                            <div class="img-post">
-                                <img src="assets/images/hoigiao.webp" alt="tongiao">
-                                <div class="title-post">Hồi giáo</div>
-                            </div>
-                            <div class="content-post">
-                                <h4 id="item-search">Halal và Haram</h4>
-                                <p>Giáo lý Hồi giáo nói rằng người Hồi giáo chỉ có thể ăn các loại thực phẩm là halal. Kinh Qur’an dạy rằng động vật nên được chăm sóc và đối xử tôn trọng, vì vậy trong khi bạn có thể ăn thịt, con vật phải được giết mổ đúng cách, với máu rút hết.</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="post">
-                        <a href="#">
-                            <div class="img-post">
-                                <img src="assets/images/daohoi.webp" alt="tongiao">
-                                <div class="title-post">Đạo Hồi</div>
-                            </div>
-                            <div class="content-post">
-                                <h4 id="item-search">Ramadan</h4>
-                                <p>Ăn chay trong tháng Ramadan là một trong năm trụ cột của đạo Hồi. Kỳ nghỉ kéo dài hàng tháng là thời gian để tôn thờ và tăng cường mối quan hệ gia đình và cộng đồng.</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="post">
-                        <a href="#">
-                            <div class="img-post">
-                                <img src="assets/images/kosher.webp" alt="tongiao">
-                                <div class="title-post">Do Thái</div>
-                            </div>
-                            <div class="content-post">
-                                <h4 id="item-search">Giữ Kosher</h4>
-                                <p>Một số người Do Thái tuân theo các quy tắc ăn kiêng cấm một số loại thực phẩm, chẳng hạn như thịt lợn hoặc động vật có vỏ.</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="post">
-                        <a href="#">
-                            <div class="img-post">
-                                <img src="assets/images/hoigiaoo.webp" alt="tongiao">
-                                <div class="title-post">Hồi Giáo</div>
-                            </div>
-                            <div class="content-post">
-                                <h4 id="item-search">Eid al-Fitr</h4>
-                                <p>Người Hồi giáo kỷ niệm kết thúc tháng Ramadan bằng một lễ hội có tên Eid al-Fitr.</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="post">
-                        <a href="#">
-                            <div class="img-post">
-                                <img src="assets/images/andogiao.webp" alt="tongiao">
-                                <div class="title-post">Ấn Độ giáo</div>
-                            </div>
-                            <div class="content-post">
-                                <h4 id="item-search">Ấn Độ giáo</h4>
-                                <p>Trong Ấn Độ giáo, việc ăn thịt thường không được chấp thuận và được coi là điều mà tín hữu có thể tránh được. </p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="post">
-                        <a href="#">
-                            <div class="img-post">
-                                <img src="assets/images/phatgiao.webp" alt="tongiao">
-                                <div class="title-post">Phật giáo</div>
-                            </div>
-                            <div class="content-post">
-                                <h4 id="item-search">Phật giáo</h4>
-                                <p>Phật tử tin vào tái sinh, và một trong những nguyên lý cơ bản của tôn giáo là “Không sát sinh.”</p>
                             </div>
                         </a>
                     </div>
@@ -634,5 +329,6 @@
         </footer>
     </div>
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/read-data/ReadData-events.js"></script>
 </body>
 </html>
