@@ -1,9 +1,11 @@
 .header {
     height: var(--header-heigt);
-    background-color:#fafafa;
-    border-bottom:3px solid black;
+    background-color:var(--white-color);
+    border-bottom:3px solid var(--black-color);
     margin: 0 7px;
     padding-bottom:2px;
+    margin: 0;
+    padding: 0;
 }
 
 .navbar {
@@ -42,7 +44,7 @@
     content: "";
     display: block;
     position: absolute;
-    border-left: 1px solid black;
+    border-left: 1px solid var(--black-color);
     height: 12px;
     right: -9px;
     top: 50%;
@@ -52,7 +54,7 @@
 .navitem:hover,
 .navlink:hover {
     cursor: pointer; /*trỏ chuột thay bằng bàn tay*/
-    color:#959494;
+    color: var(--hover-color);
 }
 
 .navicon {
@@ -73,8 +75,8 @@
     top: 118%;
     right: 0;
     width: 404px;
-    border: 1px solid #d6d5d5;
-    background-color:#fafafa;
+    border: 1px solid var(--box-color);
+    background-color:var(--box-color);
     cursor: default; 
     transform-origin: top right; /*chỉ định nơi bắt đầu animation*/
     animation: notifygrowth ease .2s;
@@ -87,7 +89,7 @@
     content: "";
     border-width: 20px 50px;
     border-style: solid;
-    border-color: transparent transparent #e1e1e1 transparent;
+    border-color: transparent transparent var(--box-color) transparent;
     position: absolute;
     right: 0px;
     top: -30px;
@@ -110,7 +112,7 @@
 
 .notihead {
     height: 40px;
-    background-color:#fafafa;
+    background-color:var(--box-color);
 }
 
 .notihead h3 {
@@ -130,11 +132,7 @@
 }
 
 .notiitem:hover {
-    background-color:#d6d5d5;
-}
-
-.notiviewed {
-    background-color:#c4c4c4;
+    background-color:var(--hover-color);
 }
 
 .notilink {
@@ -168,7 +166,7 @@
 }
 .notidescribe {
     display: block;
-    color: var(--text-color);
+    color: var(--black-color);
     font-size: 1.2rem;
     line-height: 1.6rem;
 }
@@ -185,127 +183,6 @@
     text-align: center;
     font-size: 1.4rem;
     font-weight: 400;
-}
-
-/* auth modal */
-
-.mainform {
-    width: 500px;
-    background-color: rgb(235, 251, 251);
-    border-radius: 5px;
-}
-
-.formcontainer {
-    padding: 0 32px;
-}
-
-.mainheader {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.mainheading {
-    font-size: 2.2rem;
-    font-weight: 400;
-    color: var(--text-color);
-}
-
-
-.forminput {
-    width: 90%;
-    height: 40px;
-    margin: 15px 5px 0 25px;
-    padding: 0 12px;
-    font-size: 1.4rem;
-    border: 1px solid var(--border-color);
-    border-radius: 3px;
-}
-
-.mainconfirm {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-
-.mainpolicy {
-   font-size: 1.3rem;
-    line-height: 1.6rem;
-    width: 80%;
-}
-
-.policylink {
-    color: var(--primary-color);
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.question {
-    margin-top: 20px;
-    font-size: 1.3rem;
-    text-align: center;
-}
-
-.switch {
-    text-decoration: none;
-    font-weight: 500;
-    color: var(--primary-color);
-    cursor: pointer;
-}
-
-.mainsocials {
-    background-color: var(--primary-color);
-    display: flex;
-    justify-content: space-between;
-    margin-top: 15px;
-}
-
-.btnicon {
-    width: 100%;
-    margin-bottom: 15px;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 25px;
-}
-
-.btn.btnicon i {
-    margin-right: 10px;
-    padding: 2px;
-}
-
-.btn.btnfacebook {
-    background-color: #3A5A98;
-    color: var(--white-color);
-}
-
-.btn.btngoogle {
-    background-color: var(--white-color);
-}
-
-.btn:hover {
-    background-color: rgba(0, 0, 0, 0.25);
-}
-
-.mainhelp {
-    display: flex;
-    justify-content: flex-end;
-    margin: 15px 27px 0 0;
-}
-
-.helplink {
-    font-size: 1.2rem;
-    text-decoration: none;
-    color: var(--primary-color);
-}
-
-.helpseparate {
-    display: block;
-    height: 15px;
-    margin: 0 16px;
-    border-left: 1px solid var(--border-color);
 }
 
 /* With Search */
@@ -359,6 +236,7 @@
      display: flex;
      align-items: center;
      text-align: center;
+     color: var(--black-color);
  }
  
  .headersearch {
@@ -381,9 +259,10 @@
      border: none;
      outline: none;
      font-size: 1.5rem;
-     color: var(--text-color);
+     color: var(--black-color);
      padding: 0 12px;
      border-radius: 5px;
+     background-color: var(--box-color);
  }
  
  .searchbtn {
@@ -396,12 +275,12 @@
  }
  
  .searchbtn:hover {
-     background-color: #d6d5d5;
+     background-color: var(--hover-color);
  }
  
  .searchicon {
      font-size: 1.6rem;
-     color: var(--black-color);
+     color: #000;
  }
  
  .searchinput:focus ~ .searchhistory {
@@ -425,7 +304,7 @@
  .historyheading {
      margin: 8px 12px;
      font-size: 1.5rem;
-     color: #999;
+     color: var(--black-color);
      font-weight: 300;
  }
  
@@ -440,18 +319,18 @@
  }
  
  .historyitem:hover {
-    background-color:#d6d5d5;
+    background-color:var(--hover-color);
  }
  
  .historyitem a {
      text-decoration: none;
      font-size: 1.4rem;
-     color: var(--text-color);
+     color: var(--black-color);
  }
-/*thanh tab*/
+/*Tab bar*/
 div.danhmuc{
     padding:20px 0px 10px 10px;
-    margin: 0 15px 0 10px;
+    margin-left: 290px;
 }
 div.danhmuc ul{
     display:flex;
@@ -467,52 +346,49 @@ div.danhmuc ul li a{
     color:var(--black-color);
     padding:10px 0 10px 0px;
     margin-left:5px;
-    border-bottom: 1px solid rgb(196, 196, 196);
+    border-bottom: 1px solid var(--black-color);
     position:relative;
 }
 div.danhmuc ul li a::after{
     content: "";
     height:3px;
     width:0;
-    background: #ec7f71;
+    background: var(--primary-color);
     position:absolute;
     bottom:0px;
     left:0;
 }
 div.danhmuc ul li a:hover{
-    color: #ec7f71;
+    color: var(--primary-color)1;
     transition: 1s;
 }
 div.danhmuc ul li a:hover::after{
     transition: all 0.5s ease-in-out;
     width:100%;
 }
-/*end thanh tab*/
-
-/*start container*/
-
-/*design go to top*/
+/*Go to top*/
 .Gototop{
     position:fixed;
-    background-color:rgba(128, 128, 128, 0.404);
+    background-color:var(--box-color);
     right: 15px;
     bottom:10px;
-    border:1px solid black;
+    border:1px solid var(--black-color);
     border-radius:30px;
     box-shadow:0 0 5px 0 rgb(0, 0, 0);
     display:none;
 }
 .fa-house{
-    color:rgb(43, 43, 43);
+    color:var(--black-color);
     padding:10px;
     font-size:20px;
 }
- /*end go to top*/
 
+/*Container*/
 .cover-container{
     width:100%;
     display:flex;
     justify-content:center;
+    background-color: var(--white-color);
 }
 .container{
     width:60%;
@@ -521,6 +397,7 @@ div.danhmuc ul li a:hover::after{
     text-align:center;
     line-height:3rem;
     padding-bottom:5rem;
+    color: var(--black-color);
 }
 .page-title h1{
     font-size: 6rem;
@@ -531,9 +408,9 @@ div.danhmuc ul li a:hover::after{
     margin-right:0.5rem;
     padding: 0rem 0.5rem 0rem 0.5rem;
     text-decoration:none;
-    color:white;
     font-size:1.4rem;
-    background-color:black;
+    color: var(--white-color);
+    background-color: var(--black-color);
     border-radius: 3px;
 }
 .page-title .description-title{
@@ -548,6 +425,11 @@ div.danhmuc ul li a:hover::after{
     height:500px;
     margin-bottom:3.8rem;
 }
+
+.content {
+    color: var(--black-color);
+}
+
 .content p{
     font-size:17px;
     line-height:30px;
@@ -588,13 +470,14 @@ div.danhmuc ul li a:hover::after{
     position: relative;
     font-size: 1.7rem;
     margin-top: 20px;
+    color: var(--black-color);
 }
 
 .readmore::before {
     content: "";
     border-width: 5px 7px;
     border-style: solid;
-    border-color: transparent transparent transparent black;
+    border-color: transparent transparent transparent var(--black-color);
     position: absolute;
     left: 90px;
     top: 5px;
@@ -613,9 +496,9 @@ div.danhmuc ul li a:hover::after{
     margin-right: 0.5rem;
     padding: 0rem 0.5rem 0rem 0.5rem;
     text-decoration: none;
-    color: white;
+    color: var(--white-color);
     font-size: 1.4rem;
-    background-color: black;
+    background-color: var(--black-color);
     border-radius: 3px;
 }
 
@@ -648,6 +531,10 @@ div.danhmuc ul li a:hover::after{
     margin-bottom: 10px;
 }
 
+.comment {
+    color: var(--black-color);
+}
+
 .comments {
     display: flex;
     margin-bottom: 7px;
@@ -663,7 +550,11 @@ div.danhmuc ul li a:hover::after{
 
 /* Footer */
 .footer {
-    background-color:#fafafa;
+    background-color: var(--box-color);
+}
+
+.footerheading {
+    color: var(--black-color);
 }
 
 .gridrow {
@@ -699,7 +590,7 @@ div.danhmuc ul li a:hover::after{
 .itemlink {
     text-decoration: none;
     font-size: 1.2rem;
-    color: var(--text-color);
+    color: var(--black-color);
 }
 
 .itemlink:hover {
@@ -708,4 +599,5 @@ div.danhmuc ul li a:hover::after{
 
 .itemcontact {
     font-size: 1.2rem;
+    color: var(--black-color);
 }

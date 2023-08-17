@@ -1,9 +1,11 @@
 .header {
     height: var(--header-heigt);
-    background-color:#fafafa;
-    border-bottom:3px solid black;
+    background-color:var(--white-color);
+    border-bottom:3px solid var(--black-color);
     margin: 0 7px;
     padding-bottom:2px;
+    margin: 0;
+    padding: 0;
 }
 
 .navbar {
@@ -42,7 +44,7 @@
     content: "";
     display: block;
     position: absolute;
-    border-left: 1px solid black;
+    border-left: 1px solid var(--black-color);
     height: 12px;
     right: -9px;
     top: 50%;
@@ -52,7 +54,7 @@
 .navitem:hover,
 .navlink:hover {
     cursor: pointer; /*trỏ chuột thay bằng bàn tay*/
-    color:#959494;
+    color: var(--hover-color);
 }
 
 .navicon {
@@ -73,8 +75,8 @@
     top: 118%;
     right: 0;
     width: 404px;
-    border: 1px solid whitesmoke;
-    background-color:whitesmoke;
+    border: 1px solid var(--box-color);
+    background-color: var(--box-color);
     cursor: default; 
     transform-origin: top right; /*chỉ định nơi bắt đầu animation*/
     animation: notifygrowth ease .2s;
@@ -89,7 +91,7 @@
     content: "";
     border-width: 20px 50px;
     border-style: solid;
-    border-color: transparent transparent #ecececdf transparent;
+    border-color: transparent transparent var(--box-color) transparent;
     position: absolute;
     right: 0px;
     top: -30px;
@@ -112,7 +114,7 @@
 
 .notihead {
     height: 40px;
-    background-color:#fafafa;
+    background-color:var(--box-color);
 }
 
 .notihead h3 {
@@ -132,7 +134,7 @@
 }
 
 .notiitem:hover {
-    background-color:#d6d5d5;
+    background-color: var(--hover-color);
 }
 
 .notilink {
@@ -167,7 +169,7 @@
 }
 .notidescribe {
     display: block;
-    color: var(--text-color);
+    color: var(--black-color);
     font-size: 1.2rem;
     line-height: 1.6rem;
 }
@@ -208,6 +210,7 @@
     display: flex;
     align-items: center;
     text-align: center;
+    color: var(--black-color);
 }
 
 .headersearch {
@@ -226,33 +229,33 @@
  }
  
  .searchinput {
-     width: 100%;
-     height: 100%;
-     border: none;
-     outline: none;
-     font-size: 1.5rem;
-     color: var(--text-color);
-     padding: 0 12px;
-     border-radius: 4px;
-     background-color:#eaeaea;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    color: var(--black-color);
+    padding: 0 12px;
+    border-radius: 4px;
+    background-color: var(--box-color);
  }
  
  .searchbtn {
-     border: none;
-     height: 40px;
-     width: 60px;
-     border-radius: 3px;
-     margin: 0 2px 0 2px;
-     outline: none;
+    border: none;
+    height: 40px;
+    width: 60px;
+    border-radius: 3px;
+    margin: 0 2px 0 2px;
+    outline: none;
  }
  
  .searchbtn:hover {
-     background-color: #d6d5d5;
+     background-color: var(--hover-color);
  }
  
  .searchicon {
      font-size: 1.6rem;
-     color: var(--black-color);
+     color: #000;
  }
  
  .searchinput:focus ~ .searchhistory {
@@ -276,7 +279,7 @@
  .historyheading {
      margin: 8px 12px;
      font-size: 1.5rem;
-     color: #999;
+     color: var(--black-color);
      font-weight: 300;
  }
  
@@ -285,79 +288,77 @@
      list-style: none;
  }
  
- /* .historyitem {
-     height: 38px;
-     padding: 10px 12px;
- } */
- 
  .historyitem:hover {
-    background-color:#d6d5d5;
+    background-color: var(--hover-color);
  }
  
  .historyitem a {
      text-decoration: none;
      font-size: 1.4rem;
-     color: var(--text-color);
+     color: var(--black-color);
  }
 
- /*design go to top*/
+ /*Go to top*/
 .Gototop{
     position:fixed;
-    background-color:rgba(128, 128, 128, 0.404);
+    background-color:var(--box-color);
     right: 15px;
     bottom:10px;
-    border:1px solid black;
+    border:1px solid var(--black-color);
     border-radius:30px;
     box-shadow:0 0 5px 0 rgb(0, 0, 0);
     display:none;
 }
 .fa-house{
-    color:rgb(43, 43, 43);
+    color:var(--black-color);
     padding:10px;
     font-size:20px;
 }
- /*end go to top*/
 
-/*thanh tab*/
-div.danhmuc{
+/*Tab bar*/
+.danhmuc{
     padding:20px 0px 10px 10px;
     margin: 0 15px 0 10px;
 }
-div.danhmuc ul{
+.danhmuc ul{
     display:flex;
     list-style-type: none;
     align-items:center;
 }
-div.danhmuc ul li{
+.danhmuc ul li{
     padding-right:15px;
 }
-div.danhmuc ul li a{
+.danhmuc ul li a{
     text-decoration:none;
     font-size:16px;
-    color:var(--black-color);
+    color: var(--black-color);
     padding:10px 0 10px 0px;
     margin-left:5px;
-    border-bottom: 1px solid rgb(196, 196, 196);
-    position:relative;
+    border-bottom: 1px solid var(--black-color);
+    position: relative;
 }
-div.danhmuc ul li a::after{
+.danhmuc ul li a::after{
     content: "";
     height:2px;
     width:0;
-    background: #ec7f71;
+    background: var(--primary-color);
     position:absolute;
     bottom:0px;
     left:0;
 }
-div.danhmuc ul li a:hover{
-    color: #ec7f71;
+.danhmuc ul li a:hover{
+    color: var(--primary-color);
     transition: 0.5s;
 }
-div.danhmuc ul li a:hover::after{
+.danhmuc ul li a:hover::after{
     transition: all 0.5s ease-in-out;
     width:100%;
 }
-/*end thanh tab*/
+
+/*Container*/
+.container {
+    background-color: var(--white-color);
+}
 
 div.background-content{
     padding-top:20px;
@@ -418,7 +419,7 @@ div.info h2{
     justify-content:center;
 }
 .manual-bnt{
-    border: 2px solid #40D3DC;
+    border: 2px solid var(--black-color);
     padding:5px;
     margin-right:10px;
     border-radius:5px;
@@ -426,7 +427,7 @@ div.info h2{
     transition: 1s;
 }
 .manual-bnt:hover{
-    background-color:#40D3DC;
+    background-color:var(--primary-color);
 }
 #radio1:checked ~ .first{
     margin-left:0;
@@ -449,23 +450,23 @@ div.info h2{
     position:absolute;
 }
 .navigation-auto div{
-    border: 2px solid #40D3DC;
+    border: 2px solid var(--primary-color);
     padding:5px;
     border-radius: 5px;
     margin-right:10px;
     transition: 1s;
 }
 #radio1:checked ~ .navigation-auto .auto-btn1{
-    background-color:#40D3DC;
+    background-color:var(--primary-color);
 }
 #radio2:checked ~ .navigation-auto .auto-btn2{
-    background-color:#40D3DC;
+    background-color:var(--primary-color);
 }
 #radio3:checked ~ .navigation-auto .auto-btn3{
-    background-color:#40D3DC;
+    background-color:var(--primary-color);
 }
 #radio4:checked ~ .navigation-auto .auto-btn4{
-    background-color:#40D3DC;
+    background-color:var(--primary-color);
 }
 div.content-right{
     width:30%;
@@ -483,7 +484,7 @@ div.content-right div.baiviet{
     margin-right:auto;
 }
 div.content-right div.baiviet:hover{
-    background-color:rgba(0, 0, 0, 0.116);
+    background-color:var(--hover-color);
     border-radius:5px;
     box-shadow: 0 0 10px 0 rgb(61, 61, 61);
 }
@@ -493,6 +494,7 @@ div.content-right div.baiviet a{
     color:unset;
 }
 div.content-right div.description-baiviet{
+    color: var(--black-color);
     width:50%;
     height:100%;
 }
@@ -538,12 +540,12 @@ div.content-right div.description-baiviet p{
     width:99%;
 }
 .random-content .content:hover{
-    background-color:rgba(0, 0, 0, 0.116);
+    background-color:var(--hover-color);
     border-radius:2px;
     box-shadow: 0 0 10px 0 rgb(61, 61, 61);
 }
 .random-content .content:hover h3{
-    color:var(--text-color);
+    color:var(--black-color);
 }
 .random-content .content .img{
     width:30%;
@@ -558,14 +560,17 @@ div.content-right div.description-baiviet p{
     flex-direction:column;
     width:65%;
     margin-left:10px;
+    color: var(--black-color);
 }
 .description-content a{
     font-size:18px;
     margin-bottom:10px;
     text-decoration:none;
-    color: var(--text-color);
+    color: var(--black-color);
 }
-.description-content .XemThem{
+.description-content .readmore{
+    margin-top: 10px;
+    font-size: 1.7rem ;
     color: rgb(38, 0, 255);
 }
 div.description-content > p{
@@ -582,7 +587,7 @@ div.description-content > p{
 div.description-content h3:hover{
     color: var(--hover-color);
 }
-.XemThem:hover{
+.readmore:hover{
     color: var(--hover-color);
 }
 div.art{
@@ -596,7 +601,7 @@ div.art div{
 }
 div.art a{
     text-decoration:none;
-    color:var(--text-color);
+    color:var(--black-color);
     counter-increment:section; /*khoi tao bo dem css tang*/
     padding-left: 60px;
     position: relative;
@@ -635,7 +640,7 @@ div.art a p.country{
     display:none;
 }
 .background-chude{
-    background-color:rgba(255,245,230,1);
+    background-color: var(--white-color);
 }
 .posts{
     padding-top:20px;
@@ -651,7 +656,7 @@ div.art a p.country{
 .post{
     width:21%;
     height:420px;
-    background-color:rgb(255, 255, 255);
+    background-color: var(--white-color);
     display:flex;
     margin-left:30px;
     margin-right:10px;
@@ -660,7 +665,7 @@ div.art a p.country{
 .post a{
     padding:23px;
     text-decoration:none;
-    color:var(--text-color);
+    color:var(--black-color);
 }
 .img-post img
 {
@@ -668,7 +673,7 @@ div.art a p.country{
     height:200px;
 }
 .title-post{
-    background-color:#000;
+    background-color:var(--black-color);
     color:var(--white-color);
     width:auto;
     padding: 2px;
@@ -697,10 +702,15 @@ div.art a p.country{
     font-size:30px;
     padding-bottom:10px;
     margin-bottom:0;
+    color: var(--black-color);
 }
 /* Footer */
 .footer {
-    background-color:#fafafa;
+    background-color: var(--box-color);
+}
+
+.footerheading {
+    color: var(--black-color);
 }
 
 .gridrow {
@@ -736,7 +746,7 @@ div.art a p.country{
 .itemlink {
     text-decoration: none;
     font-size: 1.2rem;
-    color: var(--text-color);
+    color: var(--black-color);
 }
 
 .itemlink:hover {
@@ -745,4 +755,5 @@ div.art a p.country{
 
 .itemcontact {
     font-size: 1.2rem;
+    color: var(--black-color);
 }
