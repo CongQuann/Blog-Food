@@ -28,7 +28,7 @@
                                 <header class="notihead">
                                     <h3>Thông báo mới</h3>
                                 </header>
-                                <ul class="notilist">
+                                <ul class="notilist" id="notilist">
                                     <li class="notiitem">
                                         <a href="" class="notilink">
                                             <div class="notiimg"><img src="./assets/images/banh mi ba huynh.jpg" alt="image" class="linkimg"></div>
@@ -38,7 +38,7 @@
                                             </div>
                                         </a>
                                     </li>
-                                    <li class="notiitem">
+                                    <!-- <li class="notiitem">
                                         <a href="" class="notilink">
                                             <div class="notiimg"><img src="./assets/images/Com ba ghien.jpeg" alt="image" class="linkimg"></div>
                                             <div class="notiinfo">
@@ -55,7 +55,7 @@
                                                 <span class="notidescribe">Trần Hậu đã bình luận bài viết của bạn</span>
                                             </div>
                                         </a>
-                                    </li>
+                                    </li> -->
                                 </ul>
                                 <footer class="notifoot">
                                     <a href="" class="notiall">Xem tất cả</a>
@@ -110,20 +110,10 @@
                 <a href="javascript:;" onclick="goToTop()"><i class="fa-solid fa-house"></i></a>
             </div>
             <div class="danhmuc">
-                <ul>
+                <ul id="danhmuc">
                         <li class="food">
                             <a href="index.html" class="food">Đồ Ăn
                                 <i class="fa-solid fa-utensils"></i>
-                            </a>
-                        </li>
-                        <li class="drink">
-                            <a href="index1.html" class="drink">Thức Uống
-                                <i class="fa-solid fa-martini-glass-citrus"></i>
-                            </a>
-                        </li>
-                        <li class="event">
-                            <a href="index2.html" class="event">Sự Kiện
-                                <i class="fa-solid fa-torii-gate"></i>
                             </a>
                         </li>
                     </ul>
@@ -152,30 +142,6 @@
                             </div>
                         </a>
                     </div>
-                    <div class="slide">
-                        <a href="#">
-                            <img src="./assets/images/tramangcau.jpg" alt="trà mãng cầu">
-                            <div class="info">
-                                <h2 id="item-search">Cách làm trà mãng cầu thanh mát, giải nhiệt ngày hè</h2>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="slide">
-                        <a href="#">
-                            <img src="./assets/images/royaltea.png" alt="Royal tea">
-                            <div class="info">
-                                <h2 id="item-search">Trà sữa Hoàng Gia - Trà sữa Royal tea</h2>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="slide">
-                        <a href="#">
-                            <img src="./assets/images/tra.jpg" alt="tìm thức uống">
-                            <div class="info">
-                                <h2 id="item-search">Đi tìm 4 loại thức uống đang được lòng giới trẻ hiện nay</h2>
-                            </div>
-                        </a>
-                    </div>
                     <!--slide images end-->
                     <!--auto start-->
                     <div class="navigation-auto">
@@ -200,7 +166,7 @@
                     <h2 id="item-search">Bài Viết Mới Nhất</h2>
                     <hr>
                 </div>
-                <div class="child-right">
+                <div class="child-right" id="child-right">
                 <div class="baiviet">
                     <a href="#">
                         <div class="img"><img src="./assets/images/hongtra.png" alt="hồng trà"></div>
@@ -210,39 +176,12 @@
                         </div>
                     </a>
                 </div>
-                <div class="baiviet">
-                    <a href="#">
-                        <div class="img"><img src="./assets/images/matcha.png" alt="Trà sữa"></div>
-                        <div class="description-baiviet">
-                            <h3 id="item-search">Cách làm trà sữa matcha chuẩn vị trà xanh ngay tại nhà</h3>
-                            <p>Trà sữa vốn là thức uống vô cùng quen thuộc với các bạn giới trẻ. Vì sự đa dạng về mùi vị và các loại topping mà trà sữa bao nhiêu năm qua vẫn không </p>
-                        </div>
-                    </a>
-                </div>
-                <div class="baiviet">
-                    <a href="#">
-                        <div class="img"><img src="./assets/images/che.png" alt="Chè hạt sen"></div>
-                        <div class="description-baiviet">
-                            <h3 id="item-search">Bí quyết nấu chè ngon cho bát chè hạt sen không bị sượng</h3>
-                            <p>Chè hạt sen là món chè truyền thống và quen thuộc với người Việt. Tuy nhiên, mỗi khi nấu món chè này, lỗi thường gặp nhất đó chính là việc hạt sen bị sượng.</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="baiviet">
-                    <a href="#">
-                        <div class="img"><img src="./assets/images/milo.png" alt="Kem milo"></div>
-                        <div class="description-baiviet">
-                            <h3 id="item-search">Kem milo: cách biến tấu milo khiến trẻ mê mẩn</h3>
-                            <p>Kem milo mát lạnh, ngọt ngào quen thuộc với hương vị ca cao chắc chắn không chỉ làm các bé nhà mình mê mẩn mà ngay cả người lớn cũng chẳng thể bỏ qua.</p>
-                        </div>
-                    </a>
-                </div>
             </div>
             </div>
            </div>
            <div class="background-random">
             <div class="random-content">
-                <div class="child-random">
+                <div class="child-random" id="child-random">
                     <div class="title">
                         <h2 id="item-search">Bài Viết Ngẫu Nhiên</h2>
                         <hr>
@@ -264,60 +203,9 @@
                         <p>February 16, 2023</p>
                     </div>
                 </div>
-                <div class="content">
-                    <div class="img">
-                        <a href="#">
-                            <img src="./assets/images/chetrung.jpg" alt="chè trứng">
-                        </a>
-                    </div>
-                    <div class="description-content">
-                        <a href="#">
-                            <h3 id="item-search">Chè trứng lạ miệng và đầy năng lượng cho cả gia đình</h3>
-                        </a>
-                        <p>Chè trứng nổi tiếng là món ăn vặt của người Hoa. Món chè tráng miệng này rất tốt cho sức khỏe. Từng quả trứng được chế biến cẩn thận, cùng với các nguyên liệu khác ...</p>
-                        <a href="#">
-                            <p class="readmore">Xem thêm</p>
-                        </a>
-                        <p>June 01, 2023</p>
-                    </div>
-                </div>
-                <div class="content">
-                    <div class="img">
-                        <a href="#">
-                            <img src="./assets/images/sua.jpg" alt="sữa">
-                        </a>
-                    </div>
-                    <div class="description-content">
-                        <a href="#">
-                            <h3 id="item-search">Top 10 loại sữa hạt tốt nhất cho sức khỏe bạn nên biết ngay</h3>
-                        </a>
-                        <p>Sữa hạt vốn được biết đến như một thức uống dinh dưỡng từ bao đời nay với nhiều công dụng có lợi cho sức khỏe. Nguyên liệu từ ngũ cốc dễ tìm, đa dạng và ...</p>
-                        <a href="#">
-                            <p class="readmore">Xem thêm</p>
-                        </a>
-                        <p>July 30, 2023</p>
-                    </div>
-                </div>
-                <div class="content">
-                    <div class="img">
-                        <a href="#">
-                            <img src="./assets/images/caphetrung.jpg" alt="cà phê trứng">
-                        </a>
-                    </div>
-                    <div class="description-content">
-                        <a href="#">
-                            <h3 id="item-search">Học cách pha cà phê trứng siêu ngon mà đơn giản phải biết</h3>
-                        </a>
-                        <p>Cà phê trứng – thoạt nghe có vẻ lạ, khiến những tín đồ nghiện cà phê ngần ngại khi dùng thử, bởi lo lắng về sự kết hợp rất lạ đời giữa vị cà phê ...</p>
-                        <a href="#">
-                            <p class="readmore">Xem thêm</p>
-                        </a>
-                        <p>June 30, 2023</p>
-                    </div>
-                </div>
                 </div>
             </div>
-            <div class="art">
+            <div class="art" id="art">
                 <div class="title">
                     <h2 id="item-search">Cocktail</h2>
                     <hr>
@@ -330,21 +218,6 @@
                     </a>
                 </div>
                 <hr>
-                <div class="count">
-                    <a href="#">
-                        <p class="country" id="item-search">Peru</p>
-                        <p class="title-fcountry" id="item-search">Pisco Sour</p>
-                        <p class="introduce-fcountry">Pisco Sour là loại cocktail truyền thống của đất nước Peru, được pha chế từ một loại rượu mạnh có tên là Pisco. Tại Peru, Pisco Sour vô cùng thông dụng nên bạn có thể gọi Pisco Sour ở bất kì quán ăn hay quán bar nào.</p>
-                    </a>
-                </div>
-                <hr>
-                <div class="count">
-                    <a href="#">
-                        <p class="country" id="item-search">Mexico</p>
-                        <p class="title-fcountry" id="item-search">Margarita</p>
-                        <p class="introduce-fcountry">Margarita đến từ Mexico, mỗi ly Margarita đều có viền muối xung quanh miệng ly để tạo nên vị mặn đậm đà của loại cocktail này và đây cũng là dấu hiệu nhận diện của Margarita.</p>
-                    </a>
-                </div>
             </div>
         </div>
         <div class="background-chude">
@@ -352,7 +225,7 @@
             <div class="title">
                 <h2 id="item-search">Trà sữa</h2>
             </div>
-            <div class="frame-posts">
+            <div class="frame-posts" id="frame-posts-MilkTea">
                 <div class="post">
                     <a href="#">
                         <div class="img-post">
@@ -369,125 +242,13 @@
                         </div>
                     </a>
                 </div>
-                <div class="post">
-                    <a href="#">
-                        <div class="img-post">
-                            <img src="assets/images/matcha.webp" alt="trasua">
-                            <div class="title-post">Review</div>
-                        </div>
-                        <div class="content-post">
-                            <h4 id="item-search">Trà sữa matcha</h4>
-                            <div class="rating">
-                                <span>đánh giá: 5</span>
-                                <div class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                            </div>
-                            <p>Bột trà xanh matcha cũng rất được ưa chuộng trong pha chế trà sữa. Trà sữa matcha kết hợp cùng trân châu, thạch trà xanh, pudding, đậu đỏ là sự lựa chọn của nhiều bạn trẻ.</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="post">
-                    <a href="#">
-                        <div class="img-post">
-                            <img src="assets/images/olong.webp" alt="trasua">
-                            <div class="title-post">Review</div>
-                        </div>
-                        <div class="content-post">
-                            <h4 id="item-search">Trà sữa ô long</h4>
-                            <div class="rating">
-                                <span>đánh giá: 5</span>
-                                <div class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                            </div>
-                            <p>Ô long là loại trà bán lên men (lên men một phần) với hương vị đặc biệt. Có nhiều loại nguyên liệu trà ô long được trồng và chế biến ở những vùng khác nhau, cách chế biến khác nhau, do đó cũng có nhiều loại trà sữa ô long đặc sắc.</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="post">
-                    <a href="#">
-                        <div class="img-post">
-                            <img src="assets/images/kemman.webp" alt="trasua">
-                            <div class="title-post">Review</div>
-                        </div>
-                        <div class="content-post">
-                            <h4 id="item-search">Trà sữa kem mặn</h4>
-                            <div class="rating">
-                                <span>đánh giá: 4</span>
-                                <div class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                            </div>
-                            <p>Trà sữa kem mặn (kem cheese) được yêu thích bởi sự hòa quyện tuyệt vời giữa vị chát nhẹ của cốt trà, vị thơm ngon ngọt ngào của sữa và đặc biệt là vị ngậy béo, hơi mằn mặn của kem cheese.</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="post">
-                    <a href="#">
-                        <div class="img-post">
-                            <img src="assets/images/tranchauduongden.webp" alt="trasua">
-                            <div class="title-post">Công thức</div>
-                        </div>
-                        <div class="content-post">
-                            <h4 id="item-search">Trà sữa trân châu đường đen</h4>
-                            <div class="rating">
-                                <span>đánh giá: 4</span>
-                                <div class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                            </div>
-                            <p>Đây chính là cái tên đình đám nhất trong làng đồ uống năm 2019 và tiếp tục khuấy đảo thị trường trà sữa 2020. Bí quyết nằm ở loại trân châu đặc biệt mang vị ngọt ngào khó cưỡng của đường đen.</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="post">
-                    <a href="#">
-                        <div class="img-post">
-                            <img src="assets/images/oreo.jpg" alt="trasua">
-                            <div class="title-post">Sáng tạo</div>
-                        </div>
-                        <div class="content-post">
-                            <h4 id="item-search">Trà sữa Oreo</h4>
-                            <div class="rating">
-                                <span>đánh giá: 4</span>
-                                <div class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                            </div>
-                            <p>Trà sữa kết hợp với Oreo cũng là một sáng tạo thú vị, mang đến hương vị mới lạ cho thế giới trà sữa.</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="post">
-                    <a href="#">
-                        <div class="img-post">
-                            <img src="assets/images/tranchautrang.jpg" alt="trasua">
-                            <div class="title-post">Công thức</div>
-                        </div>
-                        <div class="content-post">
-                            <h4 id="item-search">Trà sữa trân châu trắng</h4>
-                            <div class="rating">
-                                <span>đánh giá: 5</span>
-                                <div class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                            </div>
-                            <p>Trân châu trắng dai giòn sần sật khiến cho ly trà sữa trở nên hấp dẫn gấp nhiều lần. Vậy mới biết đôi khi bí quyết của một ly trà sữa ngon nằm ở topping.</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="post">
-                    <a href="#">
-                        <div class="img-post">
-                            <img src="assets/images/trasuapudding.jpg" alt="trasua">
-                            <div class="title-post">Review</div>
-                        </div>
-                        <div class="content-post">
-                            <h4 id="item-search">Trà sữa pudding</h4>
-                            <div class="rating">
-                                <span>đánh giá: 4</span>
-                                <div class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                            </div>
-                            <p>Thay vì uống trà sữa với trân châu, thì bạn có thể thưởng thức với pudding. Mềm mịn như tan trong miệng, pudding là loại topping đặc biệt có thể “nâng tầm” một ly trà sữa thông thường.</p>
-                        </div>
-                    </a>
-                </div>
             </div>
             </div>
             <div class="posts">
                 <div class="title">
                     <h2 id="item-search">Nước ép</h2>
                 </div>
-                <div class="frame-posts">
+                <div class="frame-posts" id="frame-posts-nuocep">
                     <div class="post">
                         <a href="#">
                             <div class="img-post">
@@ -504,125 +265,13 @@
                             </div>
                         </a>
                     </div>
-                    <div class="post">
-                        <a href="#">
-                            <div class="img-post">
-                                <img src="assets/images/luu.jpg" alt="nuocep">
-                                <div class="title-post">Review</div>
-                            </div>
-                            <div class="content-post">
-                                <h4 id="item-search">Nước ép lựu</h4>
-                                <div class="rating">
-                                    <span>đánh giá: 4</span>
-                                    <div class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                                </div>
-                                <p>Nước ép lựu là thức uống được nhiều người ưa chuộng trong thời gian gần đây. Thành phần lựu rất giàu vitamin K, đặc biệt tốt cho quá trình đông máu và sức khỏe tim mạch của con người. </p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="post">
-                        <a href="#">
-                            <div class="img-post">
-                                <img src="assets/images/duahau.jpg" alt="nuocep">
-                                <div class="title-post">Healthy</div>
-                            </div>
-                            <div class="content-post">
-                                <h4 id="item-search">Nước ép dưa hấu</h4>
-                                <div class="rating">
-                                    <span>đánh giá: 5</span>
-                                    <div class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                                </div>
-                                <p>Dưa hấu là một loại trái cây mọng nước, vị ngọt dịu và chứa rất nhiều khoáng chất rất tốt hỗ trợ giảm cân hiệu quả.</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="post">
-                        <a href="#">
-                            <div class="img-post">
-                                <img src="assets/images/nuoc-ep-dua.jpg" alt="nuocep">
-                                <div class="title-post">Review</div>
-                            </div>
-                            <div class="content-post">
-                                <h4 id="item-search">Nước ép dứa</h4>
-                                <div class="rating">
-                                    <span>đánh giá: 4</span>
-                                    <div class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                                </div>
-                                <p>Nước ép dứa hoàn thành có màu vàng đẹp mắt cùng mùi thơm dịu nhẹ mời gọi thực khách. Vị dứa chua thanh, ngọt nhẹ, cho thêm vài viên đá sẽ càng làm tăng thêm hương vị, tạo cảm giác sảng khoái thêm rất nhiều lần đó!</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="post">
-                        <a href="#">
-                            <div class="img-post">
-                                <img src="assets/images/nuoc-ep-ca-chua.jpg" alt="nuocep">
-                                <div class="title-post">Healthy</div>
-                            </div>
-                            <div class="content-post">
-                                <h4 id="item-search">Nước ép cà chua</h4>
-                                <div class="rating">
-                                    <span>đánh giá: 4</span>
-                                    <div class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                                </div>
-                                <p>Nước ép cà chua có màu đỏ đẹp mắt, vị chua chua, ngọt dịu, thanh mát tự nhiên. Những ngày trời nóng oi bức, hãy thử làm ngay 1 cốc nước ép này nhé, đảm bảo bạn sẽ thấy tươi mát ngay đó!</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="post">
-                        <a href="#">
-                            <div class="img-post">
-                                <img src="assets/images/nuoc-ep-tao.jpg" alt="nuocep">
-                                <div class="title-post">Healthy</div>
-                            </div>
-                            <div class="content-post">
-                                <h4 id="item-search">Nước ép táo</h4>
-                                <div class="rating">
-                                    <span>đánh giá: 5</span>
-                                    <div class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                                </div>
-                                <p>Giảm cân bây giờ đã trở nên đơn giản hơn với các công thức nước ép thơm ngon, bạn có thể học ngay món nước ép táo chua ngọt, thanh mát để bù nước, bù khoáng chất và tăng cường sức đề kháng nhé!</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="post">
-                        <a href="#">
-                            <div class="img-post">
-                                <img src="assets/images/nuoc-ep-dau-tay.jpg" alt="nuocep">
-                                <div class="title-post">Healthy</div>
-                            </div>
-                            <div class="content-post">
-                                <h4 id="item-search">Nước ép dâu</h4>
-                                <div class="rating">
-                                    <span>đánh giá: 5</span>
-                                    <div class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                                </div>
-                                <p>Nước ép dâu có tác dụng tích cực trong việc giảm cân, làm giảm các nốt sần và nốt mụn trên da, hiệu quả.</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="post">
-                        <a href="#">
-                            <div class="img-post">
-                                <img src="assets/images/thanh long.jpg" alt="nuocep">
-                                <div class="title-post">Review</div>
-                            </div>
-                            <div class="content-post">
-                                <h4 id="item-search">Nước ép thanh long</h4>
-                                <div class="rating">
-                                    <span>đánh giá: 5</span>
-                                    <div class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                                </div>
-                                <p>Nước ép sau hoàn thành sẽ có màu đỏ hồng đặc trưng vô cùng đẹp mắt. Khi uống bạn sẽ cảm nhận được vị ngọt tự nhiên của thanh long vô cùng cuốn hút.</p>
-                            </div>
-                        </a>
-                    </div>
                 </div>
                 </div>
                 <div class="posts">
                     <div class="title">
                         <h2 id="item-search">Các loại chè</h2>
                     </div>
-                    <div class="frame-posts">
+                    <div class="frame-posts" id="frame-posts-che">
                         <div class="post">
                             <a href="#">
                                 <div class="img-post">
@@ -636,118 +285,6 @@
                                         <div class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
                                     </div>
                                     <p>Chè trôi nước là món ăn nổi tiếng ở miền Bắc nước ta với phần nhân được làm từ đậu xanh hoặc nhân mặn. Phần vỏ làm từ bột nếp kết hợp với các nguyên liệu bí đỏ, khoai lang tím, lá dứa, cà rốt, hoa đậu biếc, nước cốt dừa… để tạo màu sắc đẹp mắt cho những viên trôi nước.</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="post">
-                            <a href="#">
-                                <div class="img-post">
-                                    <img src="assets/images/dauvan.jpg" alt="che">
-                                    <div class="title-post">Review</div>
-                                </div>
-                                <div class="content-post">
-                                    <h4 id="item-search">Chè đậu ván</h4>
-                                    <div class="rating">
-                                        <span>đánh giá: 4</span>
-                                        <div class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                                    </div>
-                                    <p>Chè đậu ván là món ăn vừa ngon vừa dễ thực hiện, lại giải nhiệt cực tốt vào ngày nắng nên được rất nhiều người yêu thích.</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="post">
-                            <a href="#">
-                                <div class="img-post">
-                                    <img src="assets/images/dautrang.jpg" alt="che">
-                                    <div class="title-post">Review</div>
-                                </div>
-                                <div class="content-post">
-                                    <h4 id="item-search">Chè đậu trắng nước cốt dừa</h4>
-                                    <div class="rating">
-                                        <span>đánh giá: 5</span>
-                                        <div class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                                    </div>
-                                    <p>Đây là món ăn quen thuộc, có nguồn gốc xuất xứ từ nền ẩm thực vùng Nam Bộ. Chè có vị bùi của đậu, dẻo thơm của gạo nếp quyện cùng vị béo ngậy của nước cốt dừa “đốn tim” bất cứ thực khách nào.</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="post">
-                            <a href="#">
-                                <div class="img-post">
-                                    <img src="assets/images/chehatsen.jpg" alt="che">
-                                    <div class="title-post">Review</div>
-                                </div>
-                                <div class="content-post">
-                                    <h4 id="item-search">Chè hạt sen long nhãn</h4>
-                                    <div class="rating">
-                                        <span>đánh giá: 5</span>
-                                        <div class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                                    </div>
-                                    <p>Chè hạt sen long nhãn không chỉ là món ăn tráng miệng ngon mà còn là bài thuốc quý rất có lợi cho sức khỏe. Thế nhưng, bạn cũng cần chú ý, những người bị bệnh đầy bụng, khó tiêu, người mắc bệnh tim nên hạn chế sử dụng loại chè này.</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="post">
-                            <a href="#">
-                                <div class="img-post">
-                                    <img src="assets/images/dauxanh.jpg" alt="che">
-                                    <div class="title-post">Truyền thống</div>
-                                </div>
-                                <div class="content-post">
-                                    <h4 id="item-search">Chè đậu xanh phổ tai</h4>
-                                    <div class="rating">
-                                        <span>đánh giá: 5</span>
-                                        <div class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                                    </div>
-                                    <p>Thành phần nguyên liệu chế biến chè đậu xanh tai phổ gồm có 200g đậu xanh nguyên vỏ, 1 ống vani, 5g phổ tai và 200g đường cát trắng.</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="post">
-                            <a href="#">
-                                <div class="img-post">
-                                    <img src="assets/images/chebap.jpg" alt="che">
-                                    <div class="title-post">Review</div>
-                                </div>
-                                <div class="content-post">
-                                    <h4 id="item-search">Chè bắp</h4>
-                                    <div class="rating">
-                                        <span>đánh giá: 5</span>
-                                        <div class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                                    </div>
-                                    <p>Chè bắp là một trong số các món chè ngon dễ làm mùa hè.</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="post">
-                            <a href="#">
-                                <div class="img-post">
-                                    <img src="assets/images/chethapcam.jpg" alt="che">
-                                    <div class="title-post">Review</div>
-                                </div>
-                                <div class="content-post">
-                                    <h4 id="item-search">Chè thập cẩm</h4>
-                                    <div class="rating">
-                                        <span>đánh giá: 4</span>
-                                        <div class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                                    </div>
-                                    <p>Chè thập cẩm là sự kết hợp của nhiều nguyên liệu như đậu đen, đậu đỏ, đậu xanh, đậu nành, khoai môn, khoai lang… Đây đều là các nguyên liệu chứa nhiều dinh dưỡng nên rất tốt cho sức khỏe. </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="post">
-                            <a href="#">
-                                <div class="img-post">
-                                    <img src="assets/images/chebuoi.jpg" alt="che">
-                                    <div class="title-post">Review</div>
-                                </div>
-                                <div class="content-post">
-                                    <h4 id="item-search">Chè bưởi giòn dai</h4>
-                                    <div class="rating">
-                                        <span>đánh giá: 5</span>
-                                        <div class="star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                                    </div>
-                                    <p>Chè bưởi là món ăn quen thuộc được rất nhiều người yêu thích không chỉ bởi hương vị ngọt, thanh mát mà còn có nhiều công dụng với sức khỏe, chăm sóc sắc đẹp.</p>
                                 </div>
                             </a>
                         </div>
@@ -832,5 +369,6 @@
         </footer>
     </div>
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/read-data/ReadData-drink.js"></script>
 </body>
 </html>

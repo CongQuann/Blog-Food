@@ -1,6 +1,6 @@
 //read data
  function loadCates(){
-     fetch("./assets/data/Data-MainPage/data-danhmuc-index.json").then(res => res.json()).then(data => {
+     fetch("./assets/data/Public-data/data-danhmuc.json").then(res => res.json()).then(data => {
          let h = "";
          for(let c of  data)
          h +=`<li><a href="${c.href}">${c.name}<i class="${c.class}"></i></a></li>`;
@@ -10,7 +10,7 @@
      })
  }
  function loadThongBao(){
-     fetch("./assets/data/Data-MainPage/data-thongbao-index.json").then(res => res.json()).then(data => {
+     fetch("./assets/data/Public-data/data-thongbao.json").then(res => res.json()).then(data => {
          let h = "";
          for(let c of  data)
          h +=`<li class="${c.class_li}">
@@ -29,7 +29,7 @@
      })
  }
  function loadAutoImg(){
-    fetch("./assets/data/Data-MainPage/data-AutoImg-index.json").then(res => res.json()).then(data => {
+    fetch("./assets/data/Data-MainPage/data-AutoImg.json").then(res => res.json()).then(data => {
         let h = "";
         for(let c of  data)
         h +=`
@@ -48,7 +48,7 @@
 }
 
 function loadNewPost(){
-    fetch("./assets/data/Data-MainPage/data-NewPost-index.json").then(res => res.json()).then(data => {
+    fetch("./assets/data/Data-MainPage/data-NewPost.json").then(res => res.json()).then(data => {
         let h = "";
         for(let c of  data)
         h +=`
@@ -68,7 +68,7 @@ function loadNewPost(){
     })
 }
 function loadRandomPost(){
-    fetch("./assets/data/Data-MainPage/data-RandomPost-index.json").then(res => res.json()).then(data => {
+    fetch("./assets/data/Data-MainPage/data-RandomPost.json").then(res => res.json()).then(data => {
         let h = "";
         for(let c of  data)
         h +=`
@@ -96,7 +96,7 @@ function loadRandomPost(){
     })
 }
 function loadFoodAndArt(){
-    fetch("./assets/data/Data-MainPage/data-FoodAndArt-index.json").then(res => res.json()).then(data => {
+    fetch("./assets/data/Data-MainPage/data-FoodAndArt.json").then(res => res.json()).then(data => {
         let h = "";
         for(let c of  data)
         h +=`
@@ -115,7 +115,7 @@ function loadFoodAndArt(){
     })
 }
 function loadPostFireFood(){
-    fetch("./assets/data/Data-MainPage/data-FiredFood-index.json").then(res => res.json()).then(data => {
+    fetch("./assets/data/Data-MainPage/data-FiredFood.json").then(res => res.json()).then(data => {
         let h = "";
         for(let c of  data)
         h +=`
@@ -142,7 +142,7 @@ function loadPostFireFood(){
     })
 }
 function loadPostSimpleFood(){
-    fetch("./assets/data/Data-MainPage/data-SimpleFood-index.json").then(res => res.json()).then(data => {
+    fetch("./assets/data/Data-MainPage/data-SimpleFood.json").then(res => res.json()).then(data => {
         let h = "";
         for(let c of  data)
         h +=`
@@ -169,7 +169,7 @@ function loadPostSimpleFood(){
     })
 }
 function loadPosthealthy(){
-    fetch("./assets/data/Data-MainPage/data-healthy-index.json").then(res => res.json()).then(data => {
+    fetch("./assets/data/Data-MainPage/data-healthy.json").then(res => res.json()).then(data => {
         let h = "";
         for(let c of  data)
         h +=`
