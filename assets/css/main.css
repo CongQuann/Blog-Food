@@ -38,8 +38,8 @@
     font-weight: 600;
 }
 
-.item-separate::after {
-    content: "";
+.item-separate::before {
+    content: ""; /*giúp lớp giả tồn tại*/
     display: block;
     position: absolute;
     border-left: 1px solid var(--black-color);
@@ -268,7 +268,7 @@
      width: 100%;
      background-color: var(--white-color);
      border-radius: 3px;
-     box-shadow: 0 1px 5px #999;
+     box-shadow: 0 1px 5px var(--black-color);
      display: none;
      overflow: hidden;
      z-index: 2;
@@ -298,7 +298,7 @@
 
  /*Go to top*/
 .Gototop{
-    position:fixed;
+    position: fixed;
     background-color:var(--box-color);
     right: 15px;
     bottom:10px;
@@ -327,25 +327,25 @@
     padding-right:15px;
 }
 .danhmuc ul li a{
-    text-decoration:none;
-    font-size:16px;
+    text-decoration: none;
+    font-size: 16px;
     color: var(--black-color);
-    padding:10px 0 10px 0px;
-    margin-left:5px;
+    padding: 10px 0 10px 0px;
+    margin-left: 5px;
     border-bottom: 1px solid var(--black-color);
     position: relative;
 }
 .danhmuc ul li:not(:first-child) a i{
-    margin-left:5px;
+    margin-left: 5px;
 }
 .danhmuc ul li a::after{
     content: "";
-    height:2px;
-    width:0;
+    height: 2px;
+    width: 0;
     background: var(--primary-color);
-    position:absolute;
-    bottom:0px;
-    left:0;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
 }
 .danhmuc ul li a:hover{
     color: var(--primary-color);
@@ -353,7 +353,7 @@
 }
 .danhmuc ul li a:hover::after{
     transition: all 0.5s ease-in-out;
-    width:100%;
+    width: 100%;
 }
 
 /*Container*/
@@ -362,21 +362,21 @@
 }
 
 div.background-content{
-    padding-top:20px;
-    display:flex;
-    width:100%;
-    height:600px;
+    padding-top: 20px;
+    display: flex;
+    width: 100%;
+    height: 600px;
 }
 .content-left{
-    width:65%;
-    margin-left:10px;
+    width: 65%;
+    margin-left: 10px;
 }
 .slider{
-    width:100%;
-    height:500px;
-    border-radius:3px;
-    position:relative;
-    overflow:hidden;
+    width: 100%;
+    height: 500px;
+    border-radius: 3px;
+    position: relative;
+    overflow: hidden;
 }
 .slides{
     width:500%;
@@ -569,7 +569,7 @@ div.content-right div.description-baiviet p{
     text-decoration:none;
     color: var(--black-color);
 }
-.description-content .readmore{
+.description-content .XemThem{
     margin-top: 10px;
     font-size: 1.7rem ;
     color: rgb(38, 0, 255);
