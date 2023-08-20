@@ -27,7 +27,7 @@ function loadThongBao(){
          e.innerHTML += h;
      })
  }
-window.onload = function(){
-     loadCates();
-     loadThongBao();
- }
+// window.onload = function(){
+//       loadCates();
+//       loadThongBao();
+//  }
