@@ -84,4 +84,9 @@ var gototop = document.getElementById("Gototop");
          },4000)
     }
  }
+//dark mode 
+var toggle = document.getElementById("toggle");
 
+toggle.onclick = function() {
+    document.body.classList.toggle("dark-theme");
+}

@@ -359,7 +359,7 @@ div.danhmuc ul li a::after{
     left:0;
 }
 div.danhmuc ul li a:hover{
-    color: var(--primary-color)1;
+    color: var(--primary-color);
     transition: 1s;
 }
 div.danhmuc ul li a:hover::after{
