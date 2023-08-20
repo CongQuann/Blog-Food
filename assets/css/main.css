@@ -2,10 +2,8 @@
     height: var(--header-heigt);
     background-color:var(--white-color);
     border-bottom:3px solid var(--black-color);
-    margin: 0 7px;
-    padding-bottom:2px;
+    padding-bottom:5px;
     margin: 0;
-    padding: 0;
 }
 
 .navbar {
@@ -526,8 +524,8 @@ div.content-right div.description-baiviet p{
 }
 .background-random{
     padding-top:30px;
+    padding-bottom:15px;
     height:max-content;
-    margin-bottom:10px;
     display:flex;
 }
 .random-content{
