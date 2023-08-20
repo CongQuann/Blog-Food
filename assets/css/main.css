@@ -352,15 +352,9 @@
     transition: 0.5s;
 }
 .danhmuc ul li a:hover::after{
-<<<<<<< HEAD
     transition: all 0.5s ease-in-out; /*all Xác định hiệu ứng của quá trình chuyển đổi cho tất cả thuộc tính.*/
-    width:100%;
-=======
-    transition: all 0.5s ease-in-out;
     width: 100%;
->>>>>>> dfa51c8059ec85a04469ef9dbe8d81f8b75ed51b
 }
-
 /*Container*/
 .container {
     background-color: var(--white-color);
