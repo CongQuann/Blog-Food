@@ -34,8 +34,9 @@
         width:100%;
     }  
 }
-/*design mobile width < 740px*/
-@media screen and (max-width:740px){
+/*design fold and mobile phone <740px*/
+@media screen and (max-width:740px)
+{
     .header{
         height:160px;
     }
@@ -57,16 +58,6 @@
         width: 100%;
         margin-left: 0;
     }
-    #toggle{
-        position:absolute;
-        right:50px;
-        top:8px;
-        width: 3%;
-        height: 100%;
-        font-size: 1.5rem;
-        color: var(--black-color);
-        cursor: pointer;
-    }
     div.background-content{
         flex-wrap:wrap;
         width:100%;
@@ -80,9 +71,6 @@
     }
     .navigation-auto{
         bottom:15px;
-    }
-    .info{
-        bottom:33px;
     }
     div.info h2{
         width:auto;
@@ -127,6 +115,22 @@
         margin-bottom:20px;
     }
 }
+/*design mobile width >= 360px and width < 740px*/
+@media screen and (min-width:360px) and (max-width:740px){
+    #toggle{
+        position:absolute;
+        right:50px;
+        top:8px;
+        width: 3%;
+        height: 100%;
+        font-size: 1.5rem;
+        color: var(--black-color);
+        cursor: pointer;
+    }
+    .info{
+        bottom:33px;
+    }
+}
 /*design tablet width >= 740px and width < 1024px*/
 @media screen and (min-width:740px) and (max-width:1024px){
     div.content-right{
@@ -169,6 +173,16 @@
     }
     .info{
         font-size:10px;
+    }
+    #toggle{
+        position:absolute;
+        right:20px;
+        top:15px;
+        width: 3%;
+        height: 100%;
+        font-size: 1.5rem;
+        color: var(--black-color);
+        cursor: pointer;
     }
 }
 /*end deign Flod phone*/

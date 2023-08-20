@@ -328,43 +328,46 @@
      color: var(--black-color);
  }
 /*Tab bar*/
-div.danhmuc{
+.danhmuc{
     padding:20px 0px 10px 10px;
-    margin-left: 290px;
+    margin: 0 15px 0 10px;
 }
-div.danhmuc ul{
+.danhmuc ul{
     display:flex;
     list-style-type: none;
     align-items:center;
 }
-div.danhmuc ul li{
+.danhmuc ul li{
     padding-right:15px;
 }
-div.danhmuc ul li a{
-    text-decoration:none;
-    font-size:16px;
-    color:var(--black-color);
-    padding:10px 0 10px 0px;
-    margin-left:5px;
+.danhmuc ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    color: var(--black-color);
+    padding: 10px 0 10px 0px;
+    margin-left: 5px;
     border-bottom: 1px solid var(--black-color);
-    position:relative;
+    position: relative;
 }
-div.danhmuc ul li a::after{
+.danhmuc ul li:not(:first-child) a i{
+    margin-left: 5px;
+}
+.danhmuc ul li a::after{
     content: "";
-    height:3px;
-    width:0;
+    height: 2px;
+    width: 0;
     background: var(--primary-color);
-    position:absolute;
-    bottom:0px;
-    left:0;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
 }
-div.danhmuc ul li a:hover{
+.danhmuc ul li a:hover{
     color: var(--primary-color);
-    transition: 1s;
+    transition: 0.5s;
 }
-div.danhmuc ul li a:hover::after{
-    transition: all 0.5s ease-in-out;
-    width:100%;
+.danhmuc ul li a:hover::after{
+    transition: all 0.5s ease-in-out; /*all Xác định hiệu ứng của quá trình chuyển đổi cho tất cả thuộc tính.*/
+    width: 100%;
 }
 /*Go to top*/
 .Gototop{
