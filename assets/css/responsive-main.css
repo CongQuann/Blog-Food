@@ -57,6 +57,16 @@
         width: 100%;
         margin-left: 0;
     }
+    #toggle{
+        position:absolute;
+        right:50px;
+        top:8px;
+        width: 3%;
+        height: 100%;
+        font-size: 1.5rem;
+        color: var(--black-color);
+        cursor: pointer;
+    }
     div.background-content{
         flex-wrap:wrap;
         width:100%;

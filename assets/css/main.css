@@ -352,7 +352,7 @@
     transition: 0.5s;
 }
 .danhmuc ul li a:hover::after{
-    transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out; /*all Xác định hiệu ứng của quá trình chuyển đổi cho tất cả thuộc tính.*/
     width:100%;
 }
 

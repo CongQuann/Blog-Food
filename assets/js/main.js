@@ -14,7 +14,6 @@ startInterval(timer);
 function onClick(radio){
     var id=radio.id;
     var number= parseInt(id.replace("radio",""));
-    console.log(number);
     clearInterval(timer);
     counter=number;
     startInterval(timer);
