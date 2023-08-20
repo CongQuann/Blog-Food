@@ -667,6 +667,12 @@ div.art a p.country{
     text-decoration:none;
     color:var(--black-color);
 }
+.post a:hover{
+    transform:scale(1.03,1.03);
+    transition-duration:0.8s;
+    border:1px solid rgba(0, 0, 0, 0.245);
+    border-radius:8px;
+}
 .img-post img
 {
     width:100%;
