@@ -1,6 +1,6 @@
 //read data
  function loadCates(){
-     fetch("./assets/data/Public-data/data-danhmuc.json").then(res => res.json()).then(data => {
+     fetch("./assets/data/Public-Data/data-danhmuc.json").then(res => res.json()).then(data => {
          let h = "";
          for(let c of  data)
          h +=`<li><a href="${c.href}">${c.name}<i class="${c.class}"></i></a></li>`;
@@ -10,7 +10,7 @@
      })
  }
  function loadThongBao(){
-     fetch("./assets/data/Public-data/data-thongbao.json").then(res => res.json()).then(data => {
+     fetch("./assets/data/Public-Data/data-thongbao.json").then(res => res.json()).then(data => {
          let h = "";
          for(let c of  data)
          h +=`<li class="${c.class_li}">
