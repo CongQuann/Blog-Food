@@ -25,7 +25,6 @@ function Validator(options) {
             inputElement.parentElement.querySelector('.form-mess').classList.remove('invalid');
             inputElement.parentElement.querySelector('input').classList.remove('invalidinput');
         }
-        return !errorMessage;
     }
     // Lấy element của form cần validate
     var formElement = document.querySelector(options.form);
@@ -35,26 +34,11 @@ function Validator(options) {
         formElement.onsubmit = function (e) {
             e.preventDefault();
 
-            var isFormValid = true;
-
             //Lặp từng rule và validate
             options.rules.forEach(function (rule) {
                 var inputElement = formElement.querySelector(rule.selector);
-                var isValid = validate(inputElement, rule);
-                if (!isValid) {
-                    isFormValid = false;
-                }
+                validate(inputElement, rule);
             });
-
-            if (isFormValid) {
-                if (typeof options.onSubmit === 'function') {
-                    var enableInput = formElement.querySelectorAll('[name]');
-                    var formValues = Array.from(enableInput).reduce(function (values, input) {
-                         return (values[input.name] = input.value) && values;
-                    }, {});
-                    options.onSubmit(formValues);
-                }
-            } 
         }
         //Lặp rule và xử lý
         options.rules.forEach(function (rule) {
@@ -74,7 +58,7 @@ function Validator(options) {
                 }
                 //Trường hợp khi đang nhập
                 inputElement.oninput = function () {
-                    var errorElement = inputElement.parentElement.querySelector('.form-mess');
+                    var errorElement = inputElement.parentElement.querySelector(options.errorSelector);
                     errorElement.innerText = '';
                     inputElement.parentElement.querySelector('.form-mess').classList.remove('invalid');
                     inputElement.parentElement.querySelector('input').classList.remove('invalidinput');
@@ -91,7 +75,7 @@ Validator.isRequired = function(selector) {
     return {
         selector: selector,
         test: function(value) {
-            return value.trim() ? undefined : 'Vui lòng nhập thông tin'
+            return value.trim() ? undefined : 'Vui lòng nhập thông tin' 
         }
     };
 }

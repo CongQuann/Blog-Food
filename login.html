@@ -36,7 +36,7 @@
     </div>
 
     <script src="./assets/js/validator.js"></script>
-    <!-- Espect -->
+    <!-- Expect -->
     <script>
         Validator({
             form: '#form-1', 
@@ -44,10 +44,7 @@
             rules: [
                 Validator.isRequired('#account'),
                 Validator.minLength('#password', 6),
-            ],
-            onSubmit: function (data) {
-                console.log(data);
-            }
+            ]
         });
     </script>
 </body>

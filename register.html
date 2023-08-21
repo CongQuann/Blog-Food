@@ -49,7 +49,7 @@
     </div>
 
     <script src="./assets/js/validator.js"></script>
-    <!-- Espect -->
+    <!-- Expect -->
     <script>
         Validator({
             form: '#form-1', 
@@ -63,10 +63,7 @@
                 Validator.isConfirmed('#password-conf', function () {
                     return document.querySelector('#form-1 #password').value;
                 })
-            ],
-            onSubmit: function (data) {
-                console.log(data);
-            }
+            ]
         });
     </script>
 </body>
