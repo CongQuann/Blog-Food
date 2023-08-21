@@ -313,10 +313,10 @@
      list-style: none;
  }
  
- .historyitem {
+ /* .historyitem {
      height: 38px;
      padding: 10px 12px;
- }
+ } */
  
  .historyitem:hover {
     background-color:var(--hover-color);
